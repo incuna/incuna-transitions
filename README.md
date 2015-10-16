@@ -7,7 +7,7 @@ It is largely based on Hover.css from [Ian Lunn](https://github.com/IanLunn/Hove
 The remainder of the incuna-transitions library will contain sass mixins to provide a greater variety of functional animations and transitions. This portion of the library is a work in progress and will grow with time.
 
 # Guidelines for Effects
-## The following is a slightly modified version of the [Hover.css](https://github.com/IanLunn/Hover) `CONTRIBUTING.md` file and provides some useful advice for adding to / editing the library.
+##### The following is a slightly modified version of the [Hover.css](https://github.com/IanLunn/Hover) `CONTRIBUTING.md` file and provides some useful advice for adding to / editing the library.
 
 1. Effects should work with only one HTML element. This way, developers only need add a class to their element for your fancy effect to work on their page. CSS pseudo-elements are perfectly acceptable as they don't require additional changes to HTML. Please use the more up-to-date two colons for pseudo elements (::before and ::after).
 
