@@ -1,0 +1,17 @@
+{
+  "name": "incuna-transitions",
+  "version": "0.0.0",
+  "homepage": "https://github.com/incuna/incuna-transitions",
+  "authors": [
+    "Beth Menzies <beth@incuna.com>"
+  ],
+  "description": "Incuna's Transitions Library",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
