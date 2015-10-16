@@ -30,6 +30,7 @@ Please be certain any effects you submit at least work in the latest versions of
 # To Do List
 
 The following is a list of ideas we have in mind for developing incuna-transitions:
+
 1. Remove all trace of icon-fonts. If you would like to learn more about why icon-fonts are bad you can watch [this video](https://www.youtube.com/watch?v=9xXBYcWgCHA) by our excellent contributor @ninjanails.
 2. Add the option to introduce arguments to mixins to make them more customisable
 3. Create some really great page transitions, specifically for expanding and contracting page elements and other effects that will pair nicely with Angular JS's show/hide functionality.
