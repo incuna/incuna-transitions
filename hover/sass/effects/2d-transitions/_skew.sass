@@ -1,12 +1,10 @@
-/* Skew */
+// Skew 
 @mixin skew
-	@include hacks()
-	@include prefixed(transition-duration, $mediumDuration)
-	@include prefixed(transition-property, transform)
+    @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
+    @include prefixed(transition-property, transform)
 
-	&:hover,
-	&:focus,
-	&:active
-		@include prefixed(transform, skew(-10deg))
-
-
+    &:hover,
+    &:focus,
+    &:active
+        @include prefixed(transform, skew(-10deg))
