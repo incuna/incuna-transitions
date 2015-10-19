@@ -5,18 +5,16 @@
     padding-right: #$spaceBetweenTextAndArrows
 
     &::before
-        content: "\f00c"
+        @include prefixed(transform, translateZ(0))
+        @include prefixed(transition-duration, 0.5s)
+        @include prefixed(transition-property, color)
+        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
-        font-family: FontAwesome
-        @include prefixed(transform, translateZ(0))
-        @include prefixed(transition-duration, .5s)
-        @include prefixed(transition-property, color)
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             color: #0F9E5E

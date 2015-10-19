@@ -3,8 +3,8 @@
     0%
         opacity: 1
     100%
-        opacity: 0
         @include prefixed(transform, translateY(1em))
+        opacity: 0
 
 // Icon Sink Away 
 @mixin icon-sink-away
@@ -14,22 +14,20 @@
 
     &::before,
     &::after
-        content: "\f056"
+        @include prefixed(transform, translateZ(0))
+        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
-        font-family: FontAwesome
-        @include prefixed(transform, translateZ(0))
 
     &::after
-        opacity: 0
         @include prefixed(animation-duration, #$slowDuration)
         @include prefixed(animation-fill-mode, forwards)
+        opacity: 0
 
     &:hover,
     &:focus,
     &:active
-
         &::after
             @include prefixed(animation-name, #$nameSpace-icon-sink-away)
             @include prefixed(animation-timing-function, ease-out)

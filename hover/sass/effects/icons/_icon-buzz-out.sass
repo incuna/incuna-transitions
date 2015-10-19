@@ -23,24 +23,22 @@
 
 @mixin icon-buzz-out
     @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
     position: relative
     padding-right: 2.2em
-    @include prefixed(transition-duration, $mediumDuration)
 
     &::before
-        content: "\f023"
+        @include prefixed(transform, translateZ(0))
+        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
-        font-family: FontAwesome
-        @include prefixed(transform, translateZ(0))
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             @include prefixed(animation-name, #$nameSpace-icon-buzz-out)
-            @include prefixed(animation-duration, .75s)
+            @include prefixed(animation-duration, 0.75s)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, 1)
