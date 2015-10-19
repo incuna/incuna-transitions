@@ -15,7 +15,7 @@
     position: relative
     padding-right: #$spaceBetweenTextAndArrows
 
-    &:before
+    &::before
         content: "\f041"
         position: absolute
         right: 1em
@@ -28,7 +28,7 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             opacity: 0
             @include prefixed(transition-duration, #$mediumDuration)
             @include prefixed(animation-name, #$nameSpace-icon-drop)

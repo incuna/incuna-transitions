@@ -14,7 +14,7 @@
     @include hacks()
     position: relative
 
-    &:before
+    &::before
         content: ''
         position: absolute
         border: $primaryColor solid $outerBorderWidth
@@ -24,7 +24,7 @@
         left: 0
         @include prefixed(animation-duration, 1s)
 
-    &:hover:before,
-    &:focus:before,
-    &:active:before
+    &:hover::before,
+    &:focus::before,
+    &:active::before
         @include prefixed(animation-name, #$nameSpace-ripple-out)

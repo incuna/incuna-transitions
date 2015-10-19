@@ -5,7 +5,7 @@
     padding-right: 2.2em
     @include prefixed(transition-duration, $fastDuration)
 
-    &:before
+    &::before
         content: "\f138"
         position: absolute
         right: 1em
@@ -20,5 +20,5 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(transform, translateX(4px))

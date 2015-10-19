@@ -10,7 +10,7 @@
     position: relative
     padding-right: #$spaceBetweenTextAndArrows
 
-    &:before
+    &::before
         content: "\f015"
         position: absolute
         right: 1em
@@ -23,7 +23,7 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(animation-name, #$nameSpace-icon-pulse)
             @include prefixed(animation-duration, 1s)
             @include prefixed(animation-timing-function, linear)

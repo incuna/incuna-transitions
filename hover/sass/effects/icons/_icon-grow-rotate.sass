@@ -7,7 +7,7 @@
     padding-right: #$spaceBetweenTextAndArrows
     @include prefixed(transition-duration, $duration)
 
-    &:before
+    &::before
         content: "\f095"
         position: absolute
         right: 1em
@@ -22,5 +22,5 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(transform, scale(1.5) rotate(12deg))

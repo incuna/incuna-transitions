@@ -19,7 +19,7 @@
     padding-right: 2.2em
     @include prefixed(transition-duration, $mediumDuration)
 
-    &:before
+    &::before
         content: "\f062"
         position: absolute
         right: 1em
@@ -31,7 +31,7 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(animation-name, #$nameSpace-icon-wobble-vertical)
             @include prefixed(animation-duration, 1s)
             @include prefixed(animation-timing-function, ease-in-out)

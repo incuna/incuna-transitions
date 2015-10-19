@@ -3,7 +3,7 @@
     @include hacks()
     position: relative
 
-    &:before
+    &::before
         pointer-events: none
         position: absolute
         z-index: -1
@@ -16,7 +16,7 @@
         border-width: $tipHeight $tipWidth 0 $tipWidth
         border-color: $tipColor transparent transparent transparent
 
-    &:hover:before,
-    &:focus:before,
-    &:active:before
+    &:hover::before,
+    &:focus::before,
+    &:active::before
         @include prefixed(transform, translateY($tipHeight))

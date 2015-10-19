@@ -3,8 +3,8 @@
     @include hacks()
     position: relative
 
-    &:before,
-    &:after
+    &::before,
+    &::after
       pointer-events: none
       position: absolute
       content: ''
@@ -17,20 +17,20 @@
       @include prefixed(transition-duration, $mediumDuration)
       @include prefixed(transition-property, opacity)
 
-    &:before
+    &::before
       bottom: 100%
       background: -webkit-radial-gradient(50% 150%, ellipse, $shadowColor 0%, rgba(0, 0, 0, 0) 80%)
       background: radial-gradient(ellipse at 50% 150%, $shadowColor 0%, rgba(0, 0, 0, 0) 80%)
 
-    &:after
+    &::after
       top: 100%
       background: -webkit-radial-gradient(50% -50%, ellipse, $shadowColor 0%, rgba(0, 0, 0, 0) 80%)
       background: radial-gradient(ellipse at 50% -50%, $shadowColor 0%, rgba(0, 0, 0, 0) 80%)
 
-    &:hover:before,
-    &:focus:before,
-    &:active:before,
-    &:hover:after,
-    &:focus:after,
-    &:active:after
+    &:hover::before,
+    &:focus::before,
+    &:active::before,
+    &:hover::after,
+    &:focus::after,
+    &:active::after
       opacity: 1
