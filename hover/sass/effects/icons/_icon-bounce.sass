@@ -6,7 +6,7 @@
     padding-right: #$spaceBetweenTextAndArrows
     @include prefixed(transition-duration, $mediumDuration)
 
-    &:before
+    &::before
         content: "\f087"
         position: absolute
         right: 1em
@@ -21,6 +21,6 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(transform, scale(1.5))
             @include prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36))

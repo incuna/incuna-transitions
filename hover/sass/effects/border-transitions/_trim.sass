@@ -6,7 +6,7 @@
     @include hacks()
     position: relative
 
-    &:before
+    &::before
         content: ''
         position: absolute
         border: white solid $innerBorderWidth
@@ -18,7 +18,7 @@
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, opacity)
 
-    &:hover:before,
-    &:focus:before,
-    &:active:before
+    &:hover::before,
+    &:focus::before,
+    &:active::before
         opacity: 1

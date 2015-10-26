@@ -6,7 +6,7 @@
     position: relative
     overflow: hidden
 
-    &:before
+    &::before
         content: ""
         position: absolute
         z-index: -1
@@ -23,5 +23,5 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             right: 0

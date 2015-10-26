@@ -4,7 +4,7 @@
     position: relative
     padding-right: 2.2em
 
-    &:before
+    &::before
         content: "\f021"
         position: absolute
         right: 1em
@@ -18,5 +18,5 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(transform, rotate(360deg))

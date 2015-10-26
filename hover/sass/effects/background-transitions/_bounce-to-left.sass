@@ -5,7 +5,7 @@
     @include prefixed(transition-property, color)
     @include prefixed(transition-duration, $slowDuration)
 
-    &:before
+    &::before
         content: ""
         position: absolute
         z-index: -1
@@ -25,6 +25,6 @@
     &:active
         color: white
 
-        &:before
+        &::before
             @include prefixed(transform, scaleX(1))
             @include prefixed(transition-timing-function, cubic-bezier(.52,1.64,.37,.66))

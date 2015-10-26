@@ -3,7 +3,7 @@
     @include hacks()
     position: relative
 
-    &:before
+    &::before
         pointer-events: none
         position: absolute
         content: ''
@@ -26,8 +26,8 @@
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, "width, height")
 
-    &:hover:before,
-    &:focus:before,
-    &:active:before
+    &:hover::before,
+    &:focus::before,
+    &:active::before
         width: $curlWidth
         height: $curlHeight

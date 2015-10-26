@@ -7,7 +7,7 @@
     @include prefixed(transition-property, color)
     @include prefixed(transition-duration, $mediumDuration)
 
-    &:before
+    &::before
         content: ""
         position: absolute
         z-index: -1
@@ -27,5 +27,5 @@
     &:active
         color: white
 
-        &:before
+        &::before
             @include prefixed(transform, scale(2))

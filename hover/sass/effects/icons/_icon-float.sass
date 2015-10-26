@@ -5,7 +5,7 @@
     padding-right: 2.2em
     @include prefixed(transition-duration, $mediumDuration)
 
-    &:before
+    &::before
         content: "\f01b"
         position: absolute
         right: 1em
@@ -20,5 +20,5 @@
     &:focus,
     &:active
 
-        &:before
+        &::before
             @include prefixed(transform, translateY(-4px))
