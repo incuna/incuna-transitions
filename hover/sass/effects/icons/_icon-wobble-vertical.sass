@@ -15,22 +15,20 @@
 
 @mixin icon-wobble-vertical
     @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
     position: relative
     padding-right: 2.2em
-    @include prefixed(transition-duration, $mediumDuration)
 
     &::before
-        content: "\f062"
+        @include prefixed(transform, translateZ(0))
+        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
-        font-family: FontAwesome
-        @include prefixed(transform, translateZ(0))
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             @include prefixed(animation-name, #$nameSpace-icon-wobble-vertical)
             @include prefixed(animation-duration, 1s)

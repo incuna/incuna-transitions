@@ -5,25 +5,23 @@
 
 @mixin icon-pop
     @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
     position: relative
     padding-right: #$spaceBetweenTextAndArrows
-    @include prefixed(transition-duration, $mediumDuration)
 
     &::before
-        content: "\f005"
-        position: absolute
-        right: 1em
-        padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             @include prefixed(animation-name, #$nameSpace-icon-pop)
             @include prefixed(animation-duration, $mediumDuration)

@@ -5,18 +5,16 @@
     padding-right: 2.2em
 
     &::before
-        content: "\f021"
-        position: absolute
-        right: 1em
-        padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transition-duration, 1s)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-in-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             @include prefixed(transform, rotate(360deg))

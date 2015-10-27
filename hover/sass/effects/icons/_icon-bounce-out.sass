@@ -5,25 +5,23 @@
 
 @mixin icon-bounce-out
     @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
     position: relative
     padding-right: #$spaceBetweenTextAndArrows
-    @include prefixed(transition-duration, $mediumDuration)
 
     &::before
-        content: "\f088"
-        position: absolute
-        right: 1em
-        padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
 
     &:hover,
     &:focus,
     &:active
-
         &::before
-            @include prefixed(transform, scale(.9))
-            @include prefixed(transition-timing-function, cubic-bezier(.47,2.02,.31,-0.36))
+            @include prefixed(transform, scale(0.9))
+            @include prefixed(transition-timing-function, cubic-bezier(0.47,2.02,0.31,-0.36))

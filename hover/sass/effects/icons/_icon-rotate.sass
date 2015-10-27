@@ -1,26 +1,23 @@
 // Icon Rotate 
 @mixin icon-rotate
     $duration: $mediumDuration
-
     @include hacks()
+    @include prefixed(transition-duration, $duration)
     position: relative
     padding-right: #$spaceBetweenTextAndArrows
-    @include prefixed(transition-duration, $duration)
 
     &::before
-        content: "\f0c6"
-        position: absolute
-        right: 1em
-        padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $duration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
 
     &:hover,
     &:focus,
     &:active
-
         &::before
             @include prefixed(transform, rotate(20deg))
