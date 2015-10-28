@@ -8,7 +8,7 @@
   "description": "Incuna's Transitions Library",
   "license": "MIT",
   "dependencies": {
-    "bourbon": "~4.0.0"
+    "bourbon": "*"
   },
   "ignore": [
     "**/.*",
