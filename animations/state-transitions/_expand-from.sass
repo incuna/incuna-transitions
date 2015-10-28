@@ -11,10 +11,10 @@
 
 // A note about origin:
 // expand from, shrink to
-// So expand with `$origin: top` expands from the top to the bottom,
-// shrink with `$origin: top` shrinks to the top from the bottom.
+// So expand-from with `$origin: top` expands from the top to the bottom,
+// shrink-to with `$origin: top` shrinks to the top from the bottom.
 
-// Can be paired with shrink mixin to expand and then shrink content when classes are added
+// Can be paired with shrink-to mixin to expand and then shrink content when classes are added
 // .element
 //     .expand-class
 //         @include expand(y, 1s, ease, 1, top)
@@ -41,6 +41,6 @@
     100%
         transform: scaleX(1)
 
-@mixin expand($axis, $duration, $timing-function, $iteration-count, $origin: center)
+@mixin expand-from($axis, $duration, $timing-function, $iteration-count, $origin: center)
     transform-origin: $origin
     @include animation(expand-#{$axis} $duration $timing-function $iteration-count)
