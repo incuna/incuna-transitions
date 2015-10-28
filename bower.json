@@ -7,6 +7,9 @@
   ],
   "description": "Incuna's Transitions Library",
   "license": "MIT",
+  "dependencies": {
+    "bourbon": "*"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

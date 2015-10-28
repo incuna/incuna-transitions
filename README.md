@@ -6,6 +6,14 @@ It is largely based on Hover.css from [Ian Lunn](https://github.com/IanLunn/Hove
 
 The remainder of the incuna-transitions library will contain sass mixins to provide a greater variety of functional animations and transitions. This portion of the library is a work in progress and will grow with time.
 
+# Requirements
+
+* [Bourbon](http://bourbon.io/)
+
+The non-hover portions of this library (anything not contained within `/hover`) use mixins from the Bourbon sass library. Without this library installed on your project these mixins will not work.
+
+As of the writing of this the latest release of Bourbon is 4.2.6, this library should work with any version of bourbon and we will make every effort to fix any breaking changes cause by new releases. If you encounter problems with a specific release of bourbon in combination with this library please let us know.
+
 # Guidelines for Effects
 ##### The following is a slightly modified version of the [Hover.css](https://github.com/IanLunn/Hover) `CONTRIBUTING.md` file and provides some useful advice for adding to / editing the library.
 
@@ -33,5 +41,5 @@ The following is a list of ideas we have in mind for developing incuna-transitio
 
 1. Remove all trace of icon-fonts. If you would like to learn more about why icon-fonts are bad you can watch [this video](https://www.youtube.com/watch?v=9xXBYcWgCHA) by our excellent contributor @ninjanails.
 2. Add the option to introduce arguments to mixins to make them more customisable
-3. Create some really great page transitions, specifically for expanding and contracting page elements and other effects that will pair nicely with Angular JS's show/hide functionality.
+3. Create some really great page transitions and other effects that will pair nicely with Angular JS's functionality.
 4. And more...

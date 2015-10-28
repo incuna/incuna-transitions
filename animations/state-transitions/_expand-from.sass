@@ -1,0 +1,46 @@
+// Can be used to animate hidden content that appears on click / hover so
+// that it appears to be expanding from a specific point of origin
+
+// Arguments:
+// axis = x (horizontal), y (vertical), both
+// duration = time in s or ms
+// timing-function = ease, ease-in, linear, cubic-bezier, etc.
+// iteration-count = integer, infinite (how many times should the animation be played)
+// origin = transform-origin property, top, left, center, if axis is set to both origin
+//     can be up to 2 values (top left, bottom center, etc.)
+
+// A note about origin:
+// expand from, shrink to
+// So expand-from with `$origin: top` expands from the top to the bottom,
+// shrink-to with `$origin: top` shrinks to the top from the bottom.
+
+// Can be paired with shrink-to mixin to expand and then shrink content when classes are added
+// .element
+//     .expand-class
+//         @include expand(y, 1s, ease, 1, top)
+//     .shrink-class
+//         @include shrink(y, 1s, ease, 1, top)
+// Will create an element that expands from the top when .expand-class is added
+// and then shrink back to the top when .shrink-class is added
+
+@include keyframes(expand)
+    0%
+        transform: scale(0)
+    100%
+        transform: scale(1)
+
+@include keyframes(expand-y)
+    0%
+        transform: scaleY(0)
+    100%
+        transform: scaleY(1)
+
+@include keyframes(expand-x)
+    0%
+        transform: scaleX(0)
+    100%
+        transform: scaleX(1)
+
+@mixin expand-from($axis, $duration, $timing-function, $iteration-count, $origin: center)
+    transform-origin: $origin
+    @include animation(expand-#{$axis} $duration $timing-function $iteration-count)
