@@ -6,6 +6,12 @@ It is largely based on Hover.css from [Ian Lunn](https://github.com/IanLunn/Hove
 
 The remainder of the incuna-transitions library will contain sass mixins to provide a greater variety of functional animations and transitions. This portion of the library is a work in progress and will grow with time.
 
+# Requirements
+
+* [Bourbon](http://bourbon.io/)
+
+The non-hover portions of this library (anything not contained within `/hover`) use mixins from the Bourbon sass library. Without this library installed on your project these mixins will not work.
+
 # Guidelines for Effects
 ##### The following is a slightly modified version of the [Hover.css](https://github.com/IanLunn/Hover) `CONTRIBUTING.md` file and provides some useful advice for adding to / editing the library.
 
