@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine bounce 2d-transition mixins into one
+
 # 0.1.0
 
 * Add state-transition folder and imports file
