@@ -1,3 +1,7 @@
+# Upcoming
+
+* Remove curl mixins, we don't like them
+
 # 0.1.1
 
 * BUGFIX: put curly braces back on variables
