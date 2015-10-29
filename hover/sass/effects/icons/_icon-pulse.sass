@@ -1,5 +1,5 @@
-// Icon Pulse 
-@include keyframes(#$nameSpace-icon-pulse)
+// Icon Pulse
+@include keyframes(#{$nameSpace-icon-pulse})
     25%
         @include prefixed(transform, scale(1.3))
     75%
@@ -8,7 +8,7 @@
 @mixin icon-pulse
     @include hacks()
     position: relative
-    padding-right: #$spaceBetweenTextAndArrows
+    padding-right: #{$spaceBetweenTextAndArrows}
 
     &::before
         @include prefixed(transform, translateZ(0))
@@ -22,7 +22,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #$nameSpace-icon-pulse)
+            @include prefixed(animation-name, #{$nameSpace-icon-pulse})
             @include prefixed(animation-duration, 1s)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, infinite)

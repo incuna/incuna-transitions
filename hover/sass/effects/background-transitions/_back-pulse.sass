@@ -1,5 +1,5 @@
-// Back Pulse 
-@include keyframes(#$nameSpace-back-pulse)
+// Back Pulse
+@include keyframes(#{$nameSpace-back-pulse})
     50%
         background-color: rgba(32, 152, 209, .75)
 
@@ -12,7 +12,7 @@
     &:hover,
     &:focus,
     &:active
-        @include prefixed(animation-name, #$nameSpace-back-pulse)
+        @include prefixed(animation-name, #{$nameSpace-back-pulse})
         @include prefixed(animation-duration, 1s)
         @include prefixed(animation-delay, $slowDuration)
         @include prefixed(animation-timing-function, linear)

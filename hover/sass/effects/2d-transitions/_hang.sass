@@ -1,5 +1,5 @@
-// Hang 
-@include keyframes(#$nameSpace-hang)
+// Hang
+@include keyframes(#{$nameSpace-hangz})
     0%
         @include prefixed(transform, translateY(8px))
     50%
@@ -7,7 +7,7 @@
     100%
         @include prefixed(transform, translateY(8px))
 
-@include keyframes(#$nameSpace-hang-sink)
+@include keyframes(#{$nameSpace-hang-sinkz})
     100%
         @include prefixed(transform, translateY(8px))
 
@@ -17,7 +17,7 @@
     &:hover,
     &:focus,
     &:active
-        @include prefixed(animation-name, "#$nameSpace-hang-sink, #$nameSpace-hang")
+        @include prefixed(animation-name, "#{$nameSpace-hang-sink}, #{$nameSpace-hang}")
         @include prefixed(animation-duration, ".3s, 1.5s")
         @include prefixed(animation-delay, "0s, .3s")
         @include prefixed(animation-timing-function, "ease-out, ease-in-out")
