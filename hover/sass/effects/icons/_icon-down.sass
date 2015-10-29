@@ -1,5 +1,5 @@
-// Icon Down 
-@include keyframes(#$nameSpace-icon-down)
+// Icon Down
+@include keyframes(#{$nameSpace-icon-down})
     0%,
     50%,
     100%
@@ -8,11 +8,11 @@
     75%
         @include prefixed(transform, translateY(6px))
 
-// Icon Down 
+// Icon Down
 @mixin icon-down
     @include hacks()
     position: relative
-    padding-right: #$spaceBetweenTextAndArrows
+    padding-right: #{$spaceBetweenTextAndArrows}
 
     &::before
         content: "\f01a"
@@ -27,6 +27,6 @@
     &:active
 
         &::before
-            @include prefixed(animation-name, #$nameSpace-icon-down)
+            @include prefixed(animation-name, #{$nameSpace-icon-down})
             @include prefixed(animation-duration, 0.75s)
             @include prefixed(animation-timing-function, ease-out)

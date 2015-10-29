@@ -1,10 +1,10 @@
-// Icon Grow Rotate 
+// Icon Grow Rotate
 @mixin icon-grow-rotate
     $duration: $mediumDuration
     @include hacks()
     @include prefixed(transition-duration, $duration)
     position: relative
-    padding-right: #$spaceBetweenTextAndArrows
+    padding-right: #{$spaceBetweenTextAndArrows}
 
     &::before
         @include prefixed(transform, translateZ(0))

@@ -1,5 +1,5 @@
-// Ripple In 
-@include keyframes(#$nameSpace-ripple-in)
+// Ripple In
+@include keyframes(#{$nameSpace-ripple-in})
     100%
         top: 0
         right: 0
@@ -28,4 +28,4 @@
     &:hover::before,
     &:focus::before,
     &:active::before
-        @include prefixed(animation-name, #$nameSpace-ripple-in)
+        @include prefixed(animation-name, #{$nameSpace-ripple-in})

@@ -1,5 +1,5 @@
-// Icon Wobble Vertical 
-@include keyframes(#$nameSpace-icon-wobble-vertical)
+// Icon Wobble Vertical
+@include keyframes(#{$nameSpace-icon-wobble-vertical})
     16.65%
         @include prefixed(transform, translateY(6px))
     33.3%
@@ -30,7 +30,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #$nameSpace-icon-wobble-vertical)
+            @include prefixed(animation-name, #{$nameSpace-icon-wobble-vertical})
             @include prefixed(animation-duration, 1s)
             @include prefixed(animation-timing-function, ease-in-out)
             @include prefixed(animation-iteration-count, 1)

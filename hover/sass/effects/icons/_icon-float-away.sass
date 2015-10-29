@@ -1,16 +1,16 @@
-// Icon Float Away 
-@include keyframes(#$nameSpace-icon-float-away)
+// Icon Float Away
+@include keyframes(#{$nameSpace-icon-float-away})
     0%
         opacity: 1
     100%
         @include prefixed(transform, translateY(-1em))
         opacity: 0
 
-// Icon Float Away 
+// Icon Float Away
 @mixin icon-float-away
     @include hacks()
     position: relative
-    padding-right: #$spaceBetweenTextAndArrows
+    padding-right: #{$spaceBetweenTextAndArrows}
 
     &::before,
     &::after
@@ -20,7 +20,7 @@
         padding: 0 1px
 
     &::after
-        @include prefixed(animation-duration, #$slowDuration)
+        @include prefixed(animation-duration, #{$slowDuration})
         @include prefixed(animation-fill-mode, forwards)
         opacity: 0
 
@@ -28,5 +28,5 @@
     &:focus,
     &:active
         &::after
-            @include prefixed(animation-name, #$nameSpace-icon-float-away)
+            @include prefixed(animation-name, #{$nameSpace-icon-float-away})
             @include prefixed(animation-timing-function, ease-out)
