@@ -1,5 +1,5 @@
-// Icon Wobble Horizontal 
-@include keyframes(#$nameSpace-icon-wobble-horizontal)
+// Icon Wobble Horizontal
+@include keyframes(#{$nameSpace-icon-wobble-horizontal})
     16.65%
         @include prefixed(transform, translateX(6px))
     33.3%
@@ -30,7 +30,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #$nameSpace-icon-wobble-horizontal)
+            @include prefixed(animation-name, #{$nameSpace-icon-wobble-horizontal})
             @include prefixed(animation-duration, 1s)
             @include prefixed(animation-timing-function, ease-in-out)
             @include prefixed(animation-iteration-count, 1)

@@ -1,5 +1,5 @@
-// Ripple Out 
-@include keyframes(#$nameSpace-ripple-out)
+// Ripple Out
+@include keyframes(#{$nameSpace-ripple-out})
     100%
         top: -(6px + 6px)
         right: -(6px + 6px)
@@ -27,4 +27,4 @@
     &:hover::before,
     &:focus::before,
     &:active::before
-        @include prefixed(animation-name, #$nameSpace-ripple-out)
+        @include prefixed(animation-name, #{$nameSpace-ripple-out})

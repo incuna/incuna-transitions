@@ -1,5 +1,5 @@
-// Icon Pop 
-@include keyframes(#$nameSpace-icon-pop)
+// Icon Pop
+@include keyframes(#{$nameSpace-icon-pop})
     50%
         @include prefixed(transform, scale(1.5))
 
@@ -7,7 +7,7 @@
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
     position: relative
-    padding-right: #$spaceBetweenTextAndArrows
+    padding-right: #{$spaceBetweenTextAndArrows}
 
     &::before
         @include prefixed(transform, translateZ(0))
@@ -23,7 +23,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #$nameSpace-icon-pop)
+            @include prefixed(animation-name, #{$nameSpace-icon-pop})
             @include prefixed(animation-duration, $mediumDuration)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, 1)

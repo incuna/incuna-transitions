@@ -1,4 +1,4 @@
-// Bubble Bottom 
+// Bubble Bottom
 @mixin bubble-bottom
     @include hacks()
     position: relative
@@ -11,7 +11,7 @@
         border-style: solid
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
-        left: calc(50% - #$tipWidth)
+        left: calc(50% - #{$tipWidth})
         bottom: 0
         border-width: $tipHeight $tipWidth 0 $tipWidth
         border-color: $tipColor transparent transparent transparent

@@ -1,4 +1,4 @@
-// Bubble Right 
+// Bubble Right
 @mixin bubble-right
     @include hacks()
     position: relative
@@ -11,7 +11,7 @@
         border-style: solid
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
-        top: calc(50% - #$tipHeight)
+        top: calc(50% - #{$tipHeight})
         right: 0
         border-width: $tipHeight 0 $tipHeight $tipWidth
         border-color: transparent transparent transparent $tipColor
