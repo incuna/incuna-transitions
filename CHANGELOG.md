@@ -1,4 +1,4 @@
-# Upcoming
+# 0.1.0
 
 * Add state-transition folder and imports file
 * Add animate-transition mixin to easily add transitions to elements with state changes
