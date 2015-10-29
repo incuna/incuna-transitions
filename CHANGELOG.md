@@ -1,3 +1,7 @@
+# Upcoming
+
+* BUGFIX: add curly braces back to variables
+
 # 0.1.0
 
 * Add state-transition folder and imports file
