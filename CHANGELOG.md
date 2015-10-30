@@ -1,3 +1,7 @@
+# 0.1.4
+
+* Rename files in state-transitions import file to match
+
 # 0.1.3
 
 * BUGFIX: put the curly braces in the right place on $nameSpace variable
