@@ -1,5 +1,5 @@
 // Icon Sink Away
-@include keyframes(#{$nameSpace-icon-sink-away})
+@include keyframes(#{$nameSpace}-icon-sink-away)
     0%
         opacity: 1
     100%
@@ -29,5 +29,5 @@
     &:focus,
     &:active
         &::after
-            @include prefixed(animation-name, #{$nameSpace-icon-sink-away})
+            @include prefixed(animation-name, #{$nameSpace}-icon-sink-away)
             @include prefixed(animation-timing-function, ease-out)
