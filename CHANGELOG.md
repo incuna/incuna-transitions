@@ -1,4 +1,4 @@
-# Upcoming
+# 0.1.3
 
 * BUGFIX: put the curly braces in the right place on $nameSpace variable
 
