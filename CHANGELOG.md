@@ -1,4 +1,4 @@
-# Upcoming
+# 0.1.2
 
 * Remove curl mixins, we don't like them
 
