@@ -1,5 +1,5 @@
 // Icon Pulse Shrink
-@include keyframes(#{$nameSpace-icon-pulse-shrink})
+@include keyframes(#{$nameSpace}-icon-pulse-shrink)
     to
         @include prefixed(transform, scale(0.8))
 
@@ -20,7 +20,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #{$nameSpace-icon-pulse-shrink})
+            @include prefixed(animation-name, #{$nameSpace}-icon-pulse-shrink)
             @include prefixed(animation-duration, $mediumDuration)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, infinite)

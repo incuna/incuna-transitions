@@ -1,5 +1,5 @@
 // Icon Buzz Out
-@include keyframes(#{$nameSpace-icon-buzz-out})
+@include keyframes(#{$nameSpace}-icon-buzz-out)
     10%
         @include prefixed(transform, translateX(3px) rotate(2deg))
     20%
@@ -38,7 +38,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #{$nameSpace-icon-buzz-out})
+            @include prefixed(animation-name, #{$nameSpace}-icon-buzz-out)
             @include prefixed(animation-duration, 0.75s)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, 1)

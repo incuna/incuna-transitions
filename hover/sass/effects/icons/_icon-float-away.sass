@@ -1,5 +1,5 @@
 // Icon Float Away
-@include keyframes(#{$nameSpace-icon-float-away})
+@include keyframes(#{$nameSpace}-icon-float-away)
     0%
         opacity: 1
     100%
@@ -28,5 +28,5 @@
     &:focus,
     &:active
         &::after
-            @include prefixed(animation-name, #{$nameSpace-icon-float-away})
+            @include prefixed(animation-name, #{$nameSpace}-icon-float-away)
             @include prefixed(animation-timing-function, ease-out)

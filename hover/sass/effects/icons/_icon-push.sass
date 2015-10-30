@@ -1,5 +1,5 @@
 // Icon Push
-@include keyframes(#{$nameSpace-icon-push})
+@include keyframes(#{$nameSpace}-icon-push)
     50%
         @include prefixed(transform, scale(0.5))
 
@@ -23,7 +23,7 @@
     &:focus,
     &:active
         &::before
-            @include prefixed(animation-name, #{$nameSpace-icon-push})
+            @include prefixed(animation-name, #{$nameSpace}-icon-push)
             @include prefixed(animation-duration, $mediumDuration)
             @include prefixed(animation-timing-function, linear)
             @include prefixed(animation-iteration-count, 1)

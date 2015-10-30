@@ -1,5 +1,5 @@
 // Wobble Horizontal
-@include keyframes(#{$nameSpace-wobble-horizontal})
+@include keyframes(#{$nameSpace}-wobble-horizontal)
     16.65%
         @include prefixed(transform, translateX(8px))
     33.3%
@@ -19,7 +19,7 @@
     &:hover,
     &:focus,
     &:active
-        @include prefixed(animation-name, #{$nameSpace-wobble-horizontal})
+        @include prefixed(animation-name, #{$nameSpace}-wobble-horizontal)
         @include prefixed(animation-duration, 1s)
         @include prefixed(animation-timing-function, ease-in-out)
         @include prefixed(animation-iteration-count, 1)
