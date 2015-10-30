@@ -1,3 +1,7 @@
+# Upcoming
+
+* BUGFIX: (temporary fix) comment out mixins in hover.sass that are breaking everything will fix at later date
+
 # 0.1.4
 
 * Rename files in state-transitions import file to match
