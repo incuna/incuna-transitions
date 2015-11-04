@@ -1,6 +1,9 @@
 # Upcoming
 
 * Combine underline-from-center, left and right into one underline mixin
+* Remove functionality to compile with classes for each hover effect
+* Simplify and reorganise import files
+* Remove pointless scaffolding folder (sass)
 
 # 0.1.5
 
