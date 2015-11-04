@@ -1,0 +1,41 @@
+// Underline
+// Use to animate an underline on an element on hover
+
+// Arguments:
+// from = the origin of the underline: left, right, center
+// color = color of the line
+// height = thickness of the line
+// duration = length of time the animation takes
+
+@mixin underline($from, $color, $height, $duration: $mediumDuration)
+    @include hacks()
+    position: relative
+    overflow: hidden
+
+    &::before
+        @include prefixed(transition-property, "left, right")
+        @include prefixed(transition-duration, $duration)
+        @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        z-index: -1
+        bottom: 0
+        background: $color
+        height: $height
+
+        @if $from == left
+            right: 100%
+            left: 0
+        @else if $from == right
+            right: 0
+            left: 100%
+        @else if $from == center
+            right: 50%
+            left: 50%
+
+    &:hover,
+    &:focus,
+    &:active
+        &::before
+            left: 0
+            right: 0

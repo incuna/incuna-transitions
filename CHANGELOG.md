@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine underline-from-center, left and right into one underline mixin
+
 # 0.1.5
 
 * BUGFIX: (temporary fix) comment out mixins in hover.sass that are breaking everything will fix at later date
