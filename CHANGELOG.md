@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine underline-from-center, left and right into one underline mixin
+
 # 0.1.5
 
 * BUGFIX: (temporary fix) comment out mixins in hover.sass that are breaking everything will fix at later date
@@ -9,6 +13,10 @@
 # 0.1.3
 
 * BUGFIX: put the curly braces in the right place on $nameSpace variable
+
+# 0.1.2
+
+* Combine bounce 2d-transition mixins into one
 
 # 0.1.2
 
