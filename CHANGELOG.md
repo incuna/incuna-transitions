@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine sweep mixins into two mixins in one file - sweep-horizontal and sweep-vertical
+
 # 1.0.0
 
 * Combine underline-from-center, left and right into one underline mixin
