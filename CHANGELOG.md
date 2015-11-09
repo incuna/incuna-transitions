@@ -1,6 +1,6 @@
 # Upcoming
 
-* Combine sweep mixins into two mixins in one file - sweep-horizontal and sweep-vertical
+* Combine sweep mixins into one mixin taht can take various arguments
 
 # 1.0.0
 

@@ -1,15 +1,10 @@
-// Sweep mixins
+// Sweep mixin
 
 // Uses a pseudo element to sweep a background color to the opposite side of an element
 
-// All sweep directions are 'towards' so left = sweep from right to left
-
-// Sweep-horizontal: for sweeps from left to right or right to left
-//     directions: left, right
-// Sweep-vertical: for sweeps from top to bottom or bottom to top
-//     directions: top, bottom
-
-// Other parameters
+// Arguments
+// directions: left, right, top, bottom
+//    All directions are 'towards' so left = sweep from right to left
 // hover-bg: color the background of the element should be on hover, this is the background
 //     color of the pseudo element that sweeps across.
 // hover-color: font color of the element on hover.
@@ -18,26 +13,30 @@
 // duration: duration of the sweep, defaults to $mediumDuration
 
 // Example use:
-// The following will produce a white button with black text. On hover the text will transition from black to white and a ::before element with a black background will sweep up from the bottom to the top. The sweep will last the length of time set with the variable $mediumDuration
+// The following will produce a white button with black text. On hover the text will
+//    transition from black to white and a ::before element with a black background will
+//    sweep up from the bottom to the top. The sweep will last the length of time set with
+//    the variable $mediumDuration
 //     .button
-//         @include sweep-vertical(top, black, white)
+//         @include sweep(top, black, white)
 //         background: white
 //         color: black
 
-// The following will produce a white button with black text and a 5px border-radius. On hover the text will transition from black to white. An ::after element with a black background will sweep across from left to right. The ::after will also have a 5px border-radius. The sweep will last 0.2s
+// The following will produce a white button with black text and a 5px border-radius.
+//    On hover the text will transition from black to white. An ::after element with a black
+//    background will sweep across from left to right. The ::after will also have a 5px
+//    border-radius. The sweep will last 0.2s
 //     .button
-//         @include sweep-horizontal(right, black, white, 5px, after, 0.2s)
+//         @include sweep(right, black, white, 5px, after, 0.2s)
 //         border-radius: 5px
 //         background: white
 //         color: black
 
-// Styles shared by both sweep mixins
-// THIS MIXIN SHOULD NOT BE USED ON ITS OWN
-@mixin sweep-basics($pseudo, $duration)
+@mixin sweep($direction, $hover-bg, $hover-color, $border-radius: 0, $pseudo: before, $duration: $mediumDuration)
     @include hacks()
-    position: relative
     @include prefixed(transition-property, color)
     @include prefixed(transition-duration, #{$duration})
+    position: relative
     &::#{$pseudo}
         @include prefixed(transition-property, transform)
         @include prefixed(transition-duration, #{$duration})
@@ -49,43 +48,32 @@
         left: 0
         right: 0
         bottom: 0
-
-// Sweep Horizontal - to left or right
-@mixin sweep-horizontal($direction, $hover-bg, $hover-color, $border-radius: 0, $pseudo: before, $duration: $mediumDuration)
-    @include sweep-basics($pseudo, $duration)
-    &::#{$pseudo}
-        @include prefixed(transform, scaleX(0))
         background: $hover-bg
         border-radius: $border-radius
 
+        // Set the transform origin depending on direction
         @if $direction == right
             @include prefixed(transform-origin, 0 50%)
         @else if $direction == left
             @include prefixed(transform-origin, 100% 50%)
-
-    &:hover,
-    &:focus,
-    &:active
-        color: $hover-color
-        &::#{$pseudo}
-            @include prefixed(transform, scaleX(1))
-
-// Sweep Vertical - to top or bottom
-@mixin sweep-vertical($direction, $hover-bg, $hover-color, $border-radius: 0, $pseudo: before, $duration: $mediumDuration)
-    @include sweep-basics($pseudo, $duration)
-    &::#{$pseudo}
-        @include prefixed(transform, scaleY(0))
-        background: $hover-bg
-        border-radius: $border-radius
-
-        @if $direction == top
+        @else if $direction == top
             @include prefixed(transform-origin, 50% 100%)
         @else if $direction == bottom
             @include prefixed(transform-origin, 50% 0)
 
+        // Set the scale type (X or Y) depending on direction
+        @if $direction == right or $direction == left
+            @include prefixed(transform, scaleX(0))
+        @if $direction == top or $direction == bottom
+            @include prefixed(transform, scaleY(0))
+
     &:hover,
     &:focus,
     &:active
         color: $hover-color
         &::#{$pseudo}
-            @include prefixed(transform, scaleY(1))
+            // Set the hover scale type (X or Y) depending on direction
+            @if $direction == right or $direction == left
+                @include prefixed(transform, scaleX(1))
+            @if $direction == top or $direction == bottom
+                @include prefixed(transform, scaleY(1))
