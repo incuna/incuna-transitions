@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine sweep mixins into one mixin that can take various arguments
+
 # 1.0.0
 
 * Combine underline-from-center, left and right into one underline mixin
