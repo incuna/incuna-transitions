@@ -1,6 +1,6 @@
 # Upcoming
 
-* Combine sweep mixins into one mixin taht can take various arguments
+* Combine sweep mixins into one mixin that can take various arguments
 
 # 1.0.0
 
