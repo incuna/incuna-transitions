@@ -1,3 +1,7 @@
+# Upcoming
+
+* Update keyframes and prefixes mixins so they work
+
 # 1.1.0
 
 * Combine sweep mixins into one mixin that can take various arguments
