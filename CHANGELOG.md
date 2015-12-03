@@ -1,4 +1,4 @@
-# Upcoming
+# 1.2.0
 
 * Combine float and sink mixins, add ability to pass arguments
 
