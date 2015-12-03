@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine float and sink mixins, add ability to pass arguments
+
 # 1.1.1
 
 * Update keyframes and prefixes mixins so they work
