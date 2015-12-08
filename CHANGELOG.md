@@ -1,3 +1,7 @@
+# Upcoming
+
+* Allow pseudo element to be passed in to underline mixin
+
 # 1.2.0
 
 * Combine float and sink mixins, add ability to pass arguments

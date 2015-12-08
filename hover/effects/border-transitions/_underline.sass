@@ -6,13 +6,14 @@
 // color = color of the line
 // height = thickness of the line
 // duration = length of time the animation takes
+// pseudo = before or after
 
-@mixin underline($from, $color, $height, $duration: $mediumDuration)
+@mixin underline($from, $color, $height, $duration: $mediumDuration, $pseudo: before)
     @include hacks()
     position: relative
     overflow: hidden
 
-    &::before
+    &::#{$pseudo}
         @include prefixed(transition-property, "left, right")
         @include prefixed(transition-duration, $duration)
         @include prefixed(transition-timing-function, ease-out)
@@ -36,6 +37,6 @@
     &:hover,
     &:focus,
     &:active
-        &::before
+        &::#{$pseudo}
             left: 0
             right: 0
