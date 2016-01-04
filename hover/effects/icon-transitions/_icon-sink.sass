@@ -1,4 +1,4 @@
-// Icon Sink 
+// Icon Sink
 @mixin icon-sink
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
@@ -15,8 +15,6 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transform, translateY(4px))

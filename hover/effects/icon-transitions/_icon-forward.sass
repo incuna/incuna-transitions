@@ -1,4 +1,4 @@
-// Icon Forward 
+// Icon Forward
 @mixin icon-forward
     @include hacks()
     @include prefixed(transition-duration, $fastDuration)
@@ -15,8 +15,6 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transform, translateX(4px))

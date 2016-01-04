@@ -1,3 +1,7 @@
+# Upcoming
+
+* Replace psuedo selectors with variable to dry sass
+
 # 1.2.1
 
 * Allow pseudo element to be passed in to underline mixin

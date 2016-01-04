@@ -1,4 +1,4 @@
-// Icon Spin 
+// Icon Spin
 @mixin icon-spin
     @include hacks()
     position: relative
@@ -13,8 +13,6 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transform, rotate(360deg))

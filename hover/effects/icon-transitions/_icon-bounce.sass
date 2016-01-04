@@ -16,9 +16,7 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transform, scale(1.5))
             @include prefixed(transition-timing-function, cubic-bezier(0.47,2.02,0.31,-0.36))

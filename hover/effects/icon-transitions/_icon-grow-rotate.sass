@@ -16,8 +16,6 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transform, scale(1.5) rotate(12deg))

@@ -1,4 +1,4 @@
-// Float Shadow 
+// Float Shadow
 @mixin float-shadow
     @include hacks()
     position: relative
@@ -16,15 +16,13 @@
         width: 90%
         opacity: 0
         background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,.35) 0%, rgba(0, 0, 0, 0) 80%)
-        background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%) // W3C 
+        background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%) // W3C
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, "transform, opacity")
 
-    &:hover,
-    &:focus,
-    &:active
-        @include prefixed(transform, translateY(-5px)) // move the element up by 5px 
+    #{$hover-states}
+        @include prefixed(transform, translateY(-5px)) // move the element up by 5px
 
         &::before
             opacity: 1
-            @include prefixed(transform, translateY(5px)) // move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) 
+            @include prefixed(transform, translateY(5px)) // move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px)

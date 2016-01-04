@@ -1,4 +1,4 @@
-// Radial Out 
+// Radial Out
 @mixin radial-out
     @include hacks()
     position: relative
@@ -22,9 +22,7 @@
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-timing-function, ease-out)
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         color: white
 
         &::before

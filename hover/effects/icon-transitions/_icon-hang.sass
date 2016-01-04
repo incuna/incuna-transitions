@@ -24,9 +24,7 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(animation-name, "#{$nameSpace}-icon-hang-sink, #{$nameSpace}-icon-hang")
             @include prefixed(animation-duration, ".3s, 1.5s")

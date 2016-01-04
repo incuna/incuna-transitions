@@ -67,9 +67,7 @@
         @if $direction == top or $direction == bottom
             @include prefixed(transform, scaleY(0))
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         color: $hover-color
         &::#{$pseudo}
             // Set the hover scale type (X or Y) depending on direction
