@@ -1,4 +1,4 @@
-# Upcoming
+# 1.2.2
 
 * Replace pseudo selectors with variable to dry sass
 * Remove moz prefix from keyframes mixin
