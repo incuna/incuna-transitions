@@ -17,9 +17,7 @@
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         @include prefixed(transform, translateY(-($tipHeight)))
 
         &::before

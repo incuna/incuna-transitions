@@ -22,9 +22,7 @@
         font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
 
         &::before
             @include prefixed(animation-name, #{$nameSpace}-icon-down)

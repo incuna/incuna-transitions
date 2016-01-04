@@ -16,9 +16,7 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(animation-name, #{$nameSpace}-icon-pulse-shrink)
             @include prefixed(animation-duration, $mediumDuration)

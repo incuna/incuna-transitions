@@ -1,4 +1,4 @@
-// Overline From Center 
+// Overline From Center
 @mixin overline-from-center
     $duration: $mediumDuration
 
@@ -19,10 +19,7 @@
         @include prefixed(transition-duration, $duration)
         @include prefixed(transition-timing-function, ease-out)
 
-    &:hover,
-    &:focus,
-    &:active
-
+    #{$hover-states}
         &::before
             left: 0
             right: 0

@@ -25,9 +25,7 @@
         @include prefixed(animation-fill-mode, forwards)
         opacity: 0
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::after
             @include prefixed(animation-name, #{$nameSpace}-icon-sink-away)
             @include prefixed(animation-timing-function, ease-out)

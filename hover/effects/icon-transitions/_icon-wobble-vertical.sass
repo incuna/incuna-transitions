@@ -26,9 +26,7 @@
         right: 1em
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(animation-name, #{$nameSpace}-icon-wobble-vertical)
             @include prefixed(animation-duration, 1s)

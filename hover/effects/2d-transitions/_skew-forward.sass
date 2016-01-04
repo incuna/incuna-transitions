@@ -1,11 +1,9 @@
-// Skew Forward 
+// Skew Forward
 @mixin skew-forward
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
     @include prefixed(transition-property, transform)
     @include prefixed(transform-origin, 0 100%)
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         @include prefixed(transform, skew(-10deg))

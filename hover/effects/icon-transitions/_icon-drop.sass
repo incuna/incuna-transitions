@@ -23,9 +23,7 @@
         opacity: 1
         padding: 0 1px
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         &::before
             @include prefixed(transition-duration, #{$mediumDuration})
             @include prefixed(animation-name, #{$nameSpace}-icon-drop)

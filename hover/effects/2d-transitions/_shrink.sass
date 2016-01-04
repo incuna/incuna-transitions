@@ -1,10 +1,8 @@
-// Shrink 
+// Shrink
 @mixin shrink
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
     @include prefixed(transition-property, transform)
 
-    &:hover,
-    &:focus,
-    &:active
+    #{$hover-states}
         @include prefixed(transform, scale(.9))
