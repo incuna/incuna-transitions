@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine wobble-top, wobble-bottom and wobble-skew into wobble-fixed mixin
+
 # 1.2.2
 
 * Replace pseudo selectors with variable to dry sass
