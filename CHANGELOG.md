@@ -1,3 +1,7 @@
+# Upcoming
+
+* Remove moz prefix from keyframes mixin
+
 # 1.2.1
 
 * Allow pseudo element to be passed in to underline mixin
