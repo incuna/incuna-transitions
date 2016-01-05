@@ -1,0 +1,103 @@
+// Wobble Move
+
+// Creates a wobble effect by moving a whole element back and forth.
+
+// Arguments
+// direction: horizontal, vertical, diagonal-up, diagonal-down - defaults to horizontal
+// duration: duration of the wobble - defaults to $mediumDuration
+
+// Example use:
+// The following will create a wobble effect that moves an element horizontally on hover
+//     .button
+//         @include wobble-move
+
+// The following will create a wobble effect that moves an element vertically on hover
+//     .button
+//         @include wobble-move(vertical)
+
+// The following will create a wobble effect that moves an element diagonally up and then down
+// on hover. The wobble will last 2 seconds.
+//     .button
+//         @include wobble-move(diagonal-up, 2s)
+
+// The following will create a wobble effect that moves an element diagonally down and then up
+// on hover. The wobble will last 2 seconds.
+//     .button
+//         @include wobble-move(diagonal-up, 2s)
+
+$wobble-step-one: 8px
+$wobble-step-two: 6px
+$wobble-step-three: 4px
+$wobble-step-four: 2px
+$wobble-step-five: 1px
+$wobble-step-six: 0
+
+// Wobble Horizontal Keyframes
+@include keyframes(#{$nameSpace}-wobble-horizontal)
+    16.65%
+        @include prefixed(transform, translateX($wobble-step-one))
+    33.3%
+        @include prefixed(transform, translateX(-$wobble-step-two))
+    49.95%
+        @include prefixed(transform, translateX($wobble-step-three))
+    66.6%
+        @include prefixed(transform, translateX(-$wobble-step-four))
+    83.25%
+        @include prefixed(transform, translateX($wobble-step-five))
+    100%
+        @include prefixed(transform, translateX($wobble-step-six))
+
+// Wobble Vertical Keyframes
+@include keyframes(#{$nameSpace}-wobble-vertical)
+    16.65%
+        @include prefixed(transform, translateY($wobble-step-one))
+    33.3%
+        @include prefixed(transform, translateY(-$wobble-step-two))
+    49.95%
+        @include prefixed(transform, translateY($wobble-step-three))
+    66.6%
+        @include prefixed(transform, translateY(-$wobble-step-four))
+    83.25%
+        @include prefixed(transform, translateY($wobble-step-five))
+    100%
+        @include prefixed(transform, translateY($wobble-step-six))
+
+// Wobble Diagonal Up Keyframes
+@include keyframes(#{$nameSpace}-wobble-diagonal-up)
+    16.65%
+        @include prefixed(transform, translate($wobble-step-one, -$wobble-step-one))
+    33.3%
+        @include prefixed(transform, translate(-$wobble-step-two, $wobble-step-two))
+    49.95%
+        @include prefixed(transform, translate($wobble-step-three, -$wobble-step-three))
+    66.6%
+        @include prefixed(transform, translate(-$wobble-step-four, $wobble-step-four))
+    83.25%
+        @include prefixed(transform, translate($wobble-step-five, -$wobble-step-five))
+    100%
+        @include prefixed(transform, translate($wobble-step-six, $wobble-step-six))
+
+// Wobble Diagonal Down Keyframes
+@include keyframes(#{$nameSpace}-wobble-diagonal-down)
+    16.65%
+        @include prefixed(transform, translate($wobble-step-one, $wobble-step-one))
+    33.3%
+        @include prefixed(transform, translate(-$wobble-step-two, -$wobble-step-two))
+    49.95%
+        @include prefixed(transform, translate($wobble-step-three, $wobble-step-three))
+    66.6%
+        @include prefixed(transform, translate(-$wobble-step-four, -$wobble-step-four))
+    83.25%
+        @include prefixed(transform, translate($wobble-step-five, $wobble-step-five))
+    100%
+        @include prefixed(transform, translate($wobble-step-six, $wobble-step-six))
+
+// Wobble-move mixin
+@mixin wobble-move($direction: horizontal, $duration: $mediumDuration)
+    @include hacks()
+
+    #{$hover-states}
+        @include prefixed(animation-name, #{$nameSpace}-wobble-#{$direction})
+        @include prefixed(animation-duration, $duration)
+        @include prefixed(animation-timing-function, ease-in-out)
+        @include prefixed(animation-iteration-count, 1)
