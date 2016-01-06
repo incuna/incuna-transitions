@@ -1,4 +1,4 @@
-# Upcoming
+# 1.3.0
 
 * Combine wobble-top, wobble-bottom and wobble-skew into wobble-fixed mixin
 * Combine wobble-horizontal, wobble-vertical, wobble-to-top-right and wobble-to-bottom-right into wobble-move mixin
