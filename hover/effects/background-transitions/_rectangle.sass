@@ -1,0 +1,71 @@
+// Rectangle Out
+
+// Uses a pseudo element to expand or contract a background color from or to the center of an element
+
+// Arguments
+// directions: in, out
+// initial-bg: background color of your element in it's initial state.
+// hover-bg: color the background of the element should be on hover, this is the background
+//     color of the pseudo element that covers the initial background.
+// hover-color: text color of the element on hover.
+// border-radius: Enter the border-radius of your element here. Defaults to 0.
+// pseudo: before or after, defaults to before.
+// duration: duration of the animation, defaults to $mediumDuration.
+
+// Example use:
+// The following will produce a white button with black text. On hover the text will
+//    transition from black to red and a ::before element with a black background will
+//    expand from the center of the element. The animation will last the
+//    length of time set with the variable $mediumDuration
+//     .button
+//         @include radial(out, white, black, red)
+//         color: black
+
+// The following will produce a white button with black text. On hover the text will
+//    transition from black to red. On hover the white background will contract towards
+//    the center of the element, leaving the black background underneath
+//    exposed. The animation will last 0.2s
+//     .button
+//         @include radial(in, white, black, red, after, 0.2s)
+//         color: black
+
+@mixin rectangle($direction, $initial-bg, $hover-bg, $hover-color, $border-radius: 0, $pseudo: before, $duration: $mediumDuration)
+    @include hacks()
+    @include prefixed(transition-property, color)
+    @include prefixed(transition-duration, #{$duration})
+    position: relative
+    border-radius: $border-radius
+
+    @if $direction == in
+        background: $hover-bg
+    @else if $direction == out
+        background: $initial-bg
+
+    &::#{$pseudo}
+        @include prefixed(transition-property, transform)
+        @include prefixed(transition-duration, #{$duration})
+        @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: $border-radius
+
+        @if $direction == in
+            @include prefixed(transform, scale(1))
+            background: $initial-bg
+        @else if $direction == out
+            @include prefixed(transform, scale(0))
+            background: $hover-bg
+
+    #{$hover-states}
+        color: $hover-color
+
+        &::#{$pseudo}
+            @if $direction == in
+                @include prefixed(transform, scale(0))
+            @else if $direction == out
+                @include prefixed(transform, scale(1))

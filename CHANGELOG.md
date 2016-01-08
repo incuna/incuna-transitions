@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine rectangle in and rectangle out into one rectangle mixin
+
 # 1.3.0
 
 * Combine wobble-top, wobble-bottom and wobble-skew into wobble-fixed mixin
