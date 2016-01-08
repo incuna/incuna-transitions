@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine bounce-to-bottom, bounce-to-top, bounce-to-left and bounce-to-right into one bounce-to mixin
+
 # 1.3.0
 
 * Combine wobble-top, wobble-bottom and wobble-skew into wobble-fixed mixin
