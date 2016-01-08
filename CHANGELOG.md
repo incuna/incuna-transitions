@@ -1,3 +1,7 @@
+# Upcoming
+
+* Combine radial-in and radial-out into one radial mixin
+
 # 1.3.0
 
 * Combine wobble-top, wobble-bottom and wobble-skew into wobble-fixed mixin
