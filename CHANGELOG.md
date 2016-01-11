@@ -1,6 +1,8 @@
 # Upcoming
 
 * Combine radial-in and radial-out into one radial mixin
+* Combine rectangle in and rectangle out into one rectangle mixin
+* Combine bounce-to-bottom, bounce-to-top, bounce-to-left and bounce-to-right into one bounce-to mixin
 
 # 1.3.0
 
