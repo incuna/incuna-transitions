@@ -1,4 +1,4 @@
-# Upcoming
+# 1.4.0
 
 * Combine radial-in and radial-out into one radial mixin
 * Combine rectangle in and rectangle out into one rectangle mixin
