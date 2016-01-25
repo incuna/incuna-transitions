@@ -1,4 +1,4 @@
-# Upcoming
+# 1.4.1
 
 * BUGFIX: fix broken if / else if on bounce-to
 
