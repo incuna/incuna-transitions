@@ -1,3 +1,7 @@
+# 1.4.2
+
+* BUGFIX: fix background-transitions file to include correct files
+
 # 1.4.1
 
 * BUGFIX: fix broken if / else if on bounce-to
