@@ -1,3 +1,7 @@
+# Upcoming
+
+* BUGFIX: fix broken if / else if on bounce-to
+
 # 1.4.0
 
 * Combine radial-in and radial-out into one radial mixin
