@@ -1,0 +1,27 @@
+// Icon Push
+@include keyframes(#{$nameSpace}-icon-push)
+    50%
+        @include prefixed(transform, scale(0.5))
+
+@mixin icon-push
+    @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
+    position: relative
+    padding-right: #{$spaceBetweenTextAndArrows}
+
+    &::before
+        @include prefixed(transform, translateZ(0))
+        @include prefixed(transition-duration, $mediumDuration)
+        @include prefixed(transition-property, transform)
+        @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
+
+    #{$hover-states}
+        &::before
+            @include prefixed(animation-name, #{$nameSpace}-icon-push)
+            @include prefixed(animation-duration, $mediumDuration)
+            @include prefixed(animation-timing-function, linear)
+            @include prefixed(animation-iteration-count, 1)

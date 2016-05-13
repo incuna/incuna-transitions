@@ -1,0 +1,31 @@
+// Icon Sink Away
+@include keyframes(#{$nameSpace}-icon-sink-away)
+    0%
+        opacity: 1
+    100%
+        @include prefixed(transform, translateY(1em))
+        opacity: 0
+
+// Icon Sink Away
+@mixin icon-sink-away
+    @include hacks()
+    position: relative
+    padding-right: #{$spaceBetweenTextAndArrows}
+
+    &::before,
+    &::after
+        @include prefixed(transform, translateZ(0))
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
+
+    &::after
+        @include prefixed(animation-duration, #{$slowDuration})
+        @include prefixed(animation-fill-mode, forwards)
+        opacity: 0
+
+    #{$hover-states}
+        &::after
+            @include prefixed(animation-name, #{$nameSpace}-icon-sink-away)
+            @include prefixed(animation-timing-function, ease-out)

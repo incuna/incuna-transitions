@@ -1,24 +1,15 @@
 {
-  "name": "hover",
-  "version": "2.0.2",
-  "homepage": "http://ianlunn.github.io/Hover",
+  "name": "incuna-transitions",
+  "version": "1.4.2",
+  "homepage": "https://github.com/incuna/incuna-transitions",
   "authors": [
-    "Ian Lunn <hello@ianlunn.co.uk>"
+    "Beth Menzies <beth@incuna.com>"
   ],
-  "description": "A collection of CSS3 powered hover effects to be applied to links, buttons, logos, SVG, featured images and so on. Easily apply to your own elements, modify or just use for inspiration. Available in CSS, Sass, and LESS.",
-  "main": "css/hover.css",
-  "keywords": [
-    "Hover",
-    "hover",
-    "hover.css",
-    "Hover Effects",
-    "CSS Effects",
-    "CSS3 Effects",
-    "CSS Hover Effects",
-    "CSS3 Hover Effects"
-  ],
+  "description": "Incuna's Transitions Library",
   "license": "MIT",
-  "private": false,
+  "dependencies": {
+    "bourbon": "*"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

@@ -1,0 +1,8 @@
+// Glow
+@mixin glow
+    @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
+    @include prefixed(transition-property, box-shadow)
+
+    #{$hover-states}
+        box-shadow: 0 0 8px $shadowColor

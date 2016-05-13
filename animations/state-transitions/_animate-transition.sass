@@ -1,0 +1,47 @@
+// Simplified transition mixin allows you to set 4 transition properties at once and will
+// output vendor prefixes
+
+// Animate-transition can be added to any element that has more than one state
+// For example it can be added to a button that changes color on :hover
+// .button
+//     @include animate-transition
+//     background: blue
+//     &:hover
+//         background: green
+// This will create a much softer transition from the blue background to the green than you
+// would get without adding the transition mixin
+
+// The 4 properties of the transition can be customised to suit your needs.
+
+// Say you have the following styles applied to a button element:
+// .button
+//     color: white
+//     background: blue
+//     &:hover
+//         color: black
+//         background: green
+// Rather than transition both the background and the color you can specify
+// which property should be affected by the transition
+//     @include animate-transition(color)
+// Will only put the transition on the text color, not the background property
+
+// You can also change the duration of the transition, the timing-function (ease-in, ease-out, linear, etc.)
+// and add a delay if necessary.
+
+// For example the following will transition the background property only, will take 0.4s,
+// with no easing (linear) and a 0.1s delay:
+// .button
+//     @include animate-transition(background, 0.4s, linear, 0.1s)
+//     color: white
+//     background: blue
+//     &:hover
+//         color: black
+//         background: green
+// So if you hover over that button element the text color will instantly change from white to black
+// and after 0.1s the background color will take 0.4s to transition from blue to green.
+
+@mixin animate-transition($property: all, $duration: 0.3s, $timing-function: ease, $delay: 0s)
+    @include transition-property($property)
+    @include transition-duration($duration)
+    @include transition-timing-function($timing-function)
+    @include transition-delay($delay)

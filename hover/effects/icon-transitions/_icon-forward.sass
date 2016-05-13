@@ -1,0 +1,20 @@
+// Icon Forward
+@mixin icon-forward
+    @include hacks()
+    @include prefixed(transition-duration, $fastDuration)
+    position: relative
+    padding-right: 2.2em
+
+    &::before
+        @include prefixed(transform, translateZ(0))
+        @include prefixed(transition-duration, $fastDuration)
+        @include prefixed(transition-property, transform)
+        @include prefixed(transition-timing-function, ease-out)
+        content: ''
+        position: absolute
+        right: 1em
+        padding: 0 1px
+
+    #{$hover-states}
+        &::before
+            @include prefixed(transform, translateX(4px))

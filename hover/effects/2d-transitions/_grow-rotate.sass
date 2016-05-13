@@ -1,0 +1,8 @@
+// Grow Rotate
+@mixin grow-rotate
+    @include hacks()
+    @include prefixed(transition-duration, $mediumDuration)
+    @include prefixed(transition-property, transform)
+
+    #{$hover-states}
+        @include prefixed(transform, scale(1.1) rotate(4deg))
