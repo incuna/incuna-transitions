@@ -6,40 +6,159 @@
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
         <meta name="description" content="Incuna-transitions : blah">
 
-        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css">
 
         <title>Incuna-transitions</title>
     </head>
 
-    <body>
+    <body class="incuna-transitions-page">
 
         <!-- HEADER -->
-        <div id="header_wrap" class="outer">
-                <header class="inner">
-                    <a id="forkme_banner" href="https://github.com/incuna/incuna-transitions">View on GitHub</a>
+        <div class="outer header-wrap">
+            <header class="inner">
+                <a class="forkme-banner" href="https://github.com/incuna/incuna-transitions">View on GitHub</a>
 
-                    <h1 id="project_title">Incuna-transitions</h1>
-                    <h2 id="project_tagline">Incuna's transitions and animations library. A combination of sass mixins sourced from <s href="https://github.com/IanLunn">@IanLunn</s>'s <a href="http://ianlunn.github.io/Hover/">Hover.css</a></h2>
-                </header>
+                <h1 class="project-title">Incuna-transitions</h1>
+                <h2 class="project-tagline">Incuna's transitions and animations library. A combination of sass mixins sourced from @IanLunn's <a href="http://ianlunn.github.io/Hover/">Hover.css</a></h2>
+            </header>
         </div>
 
         <!-- MAIN CONTENT -->
-        <div id="main_content_wrap" class="outer">
-            <section id="main_content" class="inner">
-                <h3></h3>
+        <div class="main-content-wrap outer">
+            <section class="main-content inner">
+
+                <h3>Hover transitions</h3>
+                <p class="intro">These transitions can be applied to buttons, links, nav items and other interactive page elements. They all work on mouse over.</p>
+
+                <div class="button-section 2d-transitions">
+                    <h4>2D Transitions</h4>
+
+                    <button class="example-button bob">bob</button>
+                    <button class="example-button bounce">bounce</button>
+                    <button class="example-button buzz-out">buzz-out</button>
+                    <button class="example-button buzz">buzz</button>
+                    <button class="example-button float">float</button>
+                    <button class="example-button grow-rotate">grow-rotate</button>
+                    <button class="example-button grow">grow</button>
+                    <button class="example-button hang">hang</button>
+                    <button class="example-button pop">pop</button>
+                    <button class="example-button pulse-grow">pulse-grow</button>
+                    <button class="example-button pulse-shrink">pulse-shrink</button>
+                    <button class="example-button pulse">pulse</button>
+                    <button class="example-button push">push</button>
+                    <button class="example-button rotate">rotate</button>
+                    <button class="example-button shrink">shrink</button>
+                    <button class="example-button skew-backward">skew-backward</button>
+                    <button class="example-button skew-forward">skew-forward</button>
+                    <button class="example-button skew">skew</button>
+                    <button class="example-button wobble-fixed">wobble-fixed</button>
+                    <button class="example-button wobble-move">wobble-move</button>
+                </div>
+
+                <div class="button-section background-transitions">
+                    <h4>Background Transitions</h4>
+
+                    <button class="example-button back-pulse">back-pulse</button>
+                    <button class="example-button bounce-to">bounce-to</button>
+                    <button class="example-button fade">fade</button>
+                    <button class="example-button radial">radial</button>
+                    <button class="example-button rectangle">rectangle</button>
+                    <button class="example-button shutter-in-horizontal">shutter-in-horizontal</button>
+                    <button class="example-button shutter-in-vertical">shutter-in-vertical</button>
+                    <button class="example-button shutter-out-horizontal">shutter-out-horizontal</button>
+                    <button class="example-button shutter-out-vertical">shutter-out-vertical</button>
+                    <button class="example-button sweep">sweep</button>
+                </div>
+
+                <div class="button-section border-transitions">
+                    <h4>Border Transitions</h4>
+
+                    <button class="example-button border-fade">border-fade</button>
+                    <button class="example-button hollow">hollow</button>
+                    <button class="example-button outline-in">outline-in</button>
+                    <button class="example-button outline-out">outline-out</button>
+                    <button class="example-button overline-from-center">overline-from-center</button>
+                    <button class="example-button overline-from-left">overline-from-left</button>
+                    <button class="example-button overline-from-right">overline-from-right</button>
+                    <button class="example-button overline-reveal">overline-reveal</button>
+                    <button class="example-button reveal">reveal</button>
+                    <button class="example-button ripple-in">ripple-in</button>
+                    <button class="example-button ripple-out">ripple-out</button>
+                    <button class="example-button round-corners">round-corners</button>
+                    <button class="example-button trim">trim</button>
+                    <button class="example-button underline-reveal">underline-reveal</button>
+                    <button class="example-button underline">underline</button>
+                </div>
+
+                <div class="button-section icon-transitions">
+                    <h4>Icon Transitions</h4>
+
+                    <button class="example-button icon-back">icon-back</button>
+                    <button class="example-button icon-bob">icon-bob</button>
+                    <button class="example-button icon-bounce-out">icon-bounce-out</button>
+                    <button class="example-button icon-bounce">icon-bounce</button>
+                    <button class="example-button icon-buzz-out">icon-buzz-out</button>
+                    <button class="example-button icon-buzz">icon-buzz</button>
+                    <button class="example-button icon-down">icon-down</button>
+                    <button class="example-button icon-drop">icon-drop</button>
+                    <button class="example-button icon-fade">icon-fade</button>
+                    <button class="example-button icon-float-away">icon-float-away</button>
+                    <button class="example-button icon-float">icon-float</button>
+                    <button class="example-button icon-forward">icon-forward</button>
+                    <button class="example-button icon-grow-rotate">icon-grow-rotate</button>
+                    <button class="example-button icon-grow">icon-grow</button>
+                    <button class="example-button icon-hang">icon-hang</button>
+                    <button class="example-button icon-pop">icon-pop</button>
+                    <button class="example-button icon-pulse-grow">icon-pulse-grow</button>
+                    <button class="example-button icon-pulse-shrink">icon-pulse-shrink</button>
+                    <button class="example-button icon-pulse">icon-pulse</button>
+                    <button class="example-button icon-push">icon-push</button>
+                    <button class="example-button icon-rotate">icon-rotate</button>
+                    <button class="example-button icon-shrink">icon-shrink</button>
+                    <button class="example-button icon-sink-away">icon-sink-away</button>
+                    <button class="example-button icon-sink">icon-sink</button>
+                    <button class="example-button icon-spin">icon-spin</button>
+                    <button class="example-button icon-up">icon-up</button>
+                    <button class="example-button icon-wobble-horizontal">icon-wobble-horizontal</button>
+                    <button class="example-button icon-wobble-vertical">icon-wobble-vertical</button>
+                </div>
+
+                <div class="button-section shadow-glow-transitions">
+                    <h4>Shadow and Glow Transitions</h4>
+
+                    <button class="example-button box-shadow-inset">box-shadow-inset</button>
+                    <button class="example-button box-shadow-outset">box-shadow-outset</button>
+                    <button class="example-button float-shadow">float-shadow</button>
+                    <button class="example-button glow">glow</button>
+                    <button class="example-button grow-shadow">grow-shadow</button>
+                    <button class="example-button shadow-radial">shadow-radial</button>
+                    <button class="example-button shadow">shadow</button>
+                </div>
+
+                <div class="button-section speech-bubbles">
+                    <h4>Speech Bubbles</h4>
+
+                    <button class="example-button bubble-bottom">bubble-bottom</button>
+                    <button class="example-button bubble-float-bottom">bubble-float-bottom</button>
+                    <button class="example-button bubble-float-left">bubble-float-left</button>
+                    <button class="example-button bubble-float-right">bubble-float-right</button>
+                    <button class="example-button bubble-float-top">bubble-float-top</button>
+                    <button class="example-button bubble-left">bubble-left</button>
+                    <button class="example-button bubble-right">bubble-right</button>
+                    <button class="example-button bubble-top">bubble-top</button>
+
+                </div>
 
             </section>
         </div>
 
         <!-- FOOTER  -->
-        <div id="footer_wrap" class="outer">
+        <div class="footer-wrap outer">
             <footer class="inner">
                 <p class="copyright">Incuna-transitions maintained by <a href="https://github.com/incuna">Incuna Ltd.</a></p>
                 <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
             </footer>
         </div>
-
-
 
     </body>
 </html>
