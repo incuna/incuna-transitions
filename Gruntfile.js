@@ -10,13 +10,6 @@ module.exports = function (grunt) {
         require('jit-grunt')(grunt);
     }
 
-    grunt.initConfig({
-
-        config: {
-            sassDir: 'sass'
-        }
-    });
-
     grunt.config.merge({
         watch: {
             sass: {

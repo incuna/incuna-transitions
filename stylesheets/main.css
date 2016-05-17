@@ -1,288 +1,3 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body {
-  box-sizing: border-box;
-  color: #373737;
-  background: #212121;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
-  font-weight: 700;
-  color: #222222;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px; }
-
-h1 {
-  font-size: 36px;
-  font-weight: 700; }
-
-h2 {
-  padding-bottom: 10px;
-  font-size: 32px;
-  background: url("../images/bg-hr.png") repeat-x bottom; }
-
-h3 {
-  font-size: 24px; }
-
-h4 {
-  font-size: 21px; }
-
-h5 {
-  font-size: 18px; }
-
-h6 {
-  font-size: 16px; }
-
-p {
-  margin: 10px 0 15px 0; }
-
-footer p {
-  color: #f2f2f2; }
-
-a {
-  text-decoration: none;
-  color: #007edf;
-  text-shadow: none; }
-  a:hover, a:focus {
-    text-decoration: underline; }
-
-footer a {
-  color: #F2F2F2;
-  text-decoration: underline; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb; }
-
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none; }
-
-pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
-  border-radius: 2px; }
-
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: auto; }
-
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-
-pre code {
-  display: block;
-  box-shadow: none; }
-
-blockquote {
-  color: #666;
-  margin-bottom: 20px;
-  padding: 0 0 0 20px;
-  border-left: 3px solid #bbb; }
-
-ul, ol, dl {
-  margin-bottom: 15px; }
-
-ul {
-  list-style-position: inside;
-  list-style: disc;
-  padding-left: 20px; }
-
-ol {
-  list-style-position: inside;
-  list-style: decimal;
-  padding-left: 20px; }
-
-dl dt {
-  font-weight: bold; }
-
-dl dd, dl p {
-  padding-left: 20px;
-  font-style: italic; }
-
-hr {
-  height: 1px;
-  margin-bottom: 5px;
-  border: none;
-  background: url("../images/bg-hr.png") repeat-x center; }
-
-table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left; }
-
-th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  background: #373737;
-  color: #fff; }
-
-td {
-  padding: 10px;
-  border: 1px solid #373737; }
-
-form {
-  background: #f2f2f2;
-  padding: 20px; }
-
-.outer {
-  width: 100%; }
-
-.inner {
-  position: relative;
-  max-width: 1200px;
-  padding: 20px 10px;
-  margin: 0 auto; }
-
-.forkme-banner {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url("../images/blacktocat.png") #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
-
-.header-wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121); }
-  .header-wrap .inner {
-    padding: 50px 10px 30px 10px; }
-
-.project-title {
-  margin: 0;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px; }
-
-.project-tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px; }
-
-.downloads {
-  position: absolute;
-  width: 210px;
-  z-index: 10;
-  bottom: -40px;
-  right: 0;
-  height: 70px;
-  background: url("../images/icon_download.png") no-repeat 0% 90%; }
-
-.zip-download-link {
-  display: block;
-  float: right;
-  width: 90px;
-  height: 70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left; }
-
-.tar-download-link {
-  display: block;
-  float: right;
-  width: 90px;
-  height: 70px;
-  text-indent: -5000px;
-  overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px; }
-
-.zip_download-link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left; }
-
-.tar-download-link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right; }
-
-.main-content-wrap {
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111; }
-
-.main-content {
-  padding-top: 40px; }
-
-.footer-wrap {
-  background: #212121; }
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px; }
-  .downloads {
-    display: none; }
-  .inner {
-    min-width: 320px;
-    max-width: 480px; }
-  .project-title {
-    font-size: 32px; }
-  h1 {
-    font-size: 28px; }
-  h2 {
-    font-size: 24px; }
-  h3 {
-    font-size: 21px; }
-  h4 {
-    font-size: 18px; }
-  h5 {
-    font-size: 14px; }
-  h6 {
-    font-size: 12px; }
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px; } }
-
 /* 2D TRANSITIONS */
 @-webkit-keyframes hover-pulse {
   25% {
@@ -1185,15 +900,2283 @@ form {
   100% {
     transform: scaleX(0); } }
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  box-sizing: border-box;
+  color: #373737;
+  background: #212121;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: -1px; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 700; }
+
+h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  background: url("../images/bg-hr.png") repeat-x bottom; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 21px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+p {
+  margin: 10px 0 15px 0; }
+
+footer p {
+  color: #f2f2f2; }
+
+a {
+  text-decoration: none;
+  color: #faaf40;
+  text-shadow: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+
+footer a {
+  color: #F2F2F2;
+  text-decoration: underline; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 739px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #ebebeb; }
+
+p img {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  border: none; }
+
+pre, code {
+  width: 100%;
+  color: #222;
+  background-color: #fff;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 14px;
+  border-radius: 2px; }
+
+pre {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; }
+
+code {
+  padding: 3px;
+  margin: 0 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+pre code {
+  display: block;
+  box-shadow: none; }
+
+blockquote {
+  color: #666;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #bbb; }
+
+ul, ol, dl {
+  margin-bottom: 15px; }
+
+ul {
+  list-style-position: inside;
+  list-style: disc;
+  padding-left: 20px; }
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding-left: 20px; }
+
+dl dt {
+  font-weight: bold; }
+
+dl dd, dl p {
+  padding-left: 20px;
+  font-style: italic; }
+
+hr {
+  height: 1px;
+  margin-bottom: 5px;
+  border: none;
+  background: url("../images/bg-hr.png") repeat-x center; }
+
+table {
+  border: 1px solid #373737;
+  margin-bottom: 20px;
+  text-align: left; }
+
+th {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  background: #373737;
+  color: #fff; }
+
+td {
+  padding: 10px;
+  border: 1px solid #373737; }
+
+form {
+  background: #f2f2f2;
+  padding: 20px; }
+
+.outer {
+  width: 100%; }
+
+.inner {
+  position: relative;
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin: 0 auto; }
+
+.forkme-banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url("../images/blacktocat.png") #faaf40 no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
+.header-wrap {
+  background: #212121;
+  background: -moz-linear-gradient(top, #373737, #212121);
+  background: -webkit-linear-gradient(top, #373737, #212121);
+  background: -ms-linear-gradient(top, #373737, #212121);
+  background: -o-linear-gradient(top, #373737, #212121);
+  background: linear-gradient(top, #373737, #212121); }
+  .header-wrap .inner {
+    padding: 50px 10px 30px 10px; }
+
+.project-title {
+  margin: 0;
+  color: #faaf40;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px; }
+
+.project-tagline {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px; }
+
+.downloads {
+  position: absolute;
+  width: 210px;
+  z-index: 10;
+  bottom: -40px;
+  right: 0;
+  height: 70px;
+  background: url("../images/icon_download.png") no-repeat 0% 90%; }
+
+.zip-download-link {
+  display: block;
+  float: right;
+  width: 90px;
+  height: 70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom left; }
+
+.tar-download-link {
+  display: block;
+  float: right;
+  width: 90px;
+  height: 70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_download.png) no-repeat bottom right;
+  margin-left: 10px; }
+
+.zip_download-link:hover {
+  background: url(../images/sprite_download.png) no-repeat top left; }
+
+.tar-download-link:hover {
+  background: url(../images/sprite_download.png) no-repeat top right; }
+
+.main-content-wrap {
+  background: #eee;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111; }
+
+.main-content {
+  padding-top: 40px; }
+
+.footer-wrap {
+  background: #212121; }
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px; }
+  .downloads {
+    display: none; }
+  .inner {
+    min-width: 320px;
+    max-width: 480px; }
+  .project-title {
+    font-size: 32px; }
+  h1 {
+    font-size: 28px; }
+  h2 {
+    font-size: 24px; }
+  h3 {
+    font-size: 21px; }
+  h4 {
+    font-size: 18px; }
+  h5 {
+    font-size: 14px; }
+  h6 {
+    font-size: 12px; }
+  code, pre {
+    min-width: 320px;
+    max-width: 480px;
+    font-size: 11px; } }
+
 .button-section {
   margin-bottom: 25px; }
   .button-section .example-button {
+    cursor: pointer;
     display: inline-block;
     margin: 10px;
     padding: 15px;
     border: 0;
-    background: white;
+    background: #faaf40;
+    color: #000;
     font-size: 18px;
+    font-weight: 700;
     text-transform: capitalize; }
+    .button-section .example-button.bob {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.bob:hover, .button-section .example-button.bob:active, .button-section .example-button.bob:focus {
+        -webkit-animation-name: hover-bob-float, hover-bob;
+        animation-name: hover-bob-float, hover-bob;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate; }
+    .button-section .example-button.bounce-in {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      .button-section .example-button.bounce-in:hover, .button-section .example-button.bounce-in:active, .button-section .example-button.bounce-in:focus {
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
+    .button-section .example-button.bounce-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      .button-section .example-button.bounce-out:hover, .button-section .example-button.bounce-out:active, .button-section .example-button.bounce-out:focus {
+        -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8); }
+    .button-section .example-button.buzz-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.buzz-out:hover, .button-section .example-button.buzz-out:active, .button-section .example-button.buzz-out:focus {
+        -webkit-animation-name: hover-buzz-out;
+        animation-name: hover-buzz-out;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.buzz {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.buzz:hover, .button-section .example-button.buzz:active, .button-section .example-button.buzz:focus {
+        -webkit-animation-name: hover-buzz;
+        animation-name: hover-buzz;
+        -webkit-animation-duration: 0.15s;
+        animation-duration: 0.15s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite; }
+    .button-section .example-button.float-up {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+      .button-section .example-button.float-up:hover, .button-section .example-button.float-up:active, .button-section .example-button.float-up:focus {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px); }
+    .button-section .example-button.float-down {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+      .button-section .example-button.float-down:hover, .button-section .example-button.float-down:active, .button-section .example-button.float-down:focus {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px); }
+    .button-section .example-button.grow-rotate {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.grow-rotate:hover, .button-section .example-button.grow-rotate:active, .button-section .example-button.grow-rotate:focus {
+        -webkit-transform: scale(1.1) rotate(4deg);
+        transform: scale(1.1) rotate(4deg); }
+    .button-section .example-button.grow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.grow:hover, .button-section .example-button.grow:active, .button-section .example-button.grow:focus {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+    .button-section .example-button.hang {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.hang:hover, .button-section .example-button.hang:active, .button-section .example-button.hang:focus {
+        -webkit-animation-name: hover-hang-sink, hover-hang;
+        animation-name: hover-hang-sink, hover-hang;
+        -webkit-animation-duration: .3s, 1.5s;
+        animation-duration: .3s, 1.5s;
+        -webkit-animation-delay: 0s, .3s;
+        animation-delay: 0s, .3s;
+        -webkit-animation-timing-function: ease-out, ease-in-out;
+        animation-timing-function: ease-out, ease-in-out;
+        -webkit-animation-iteration-count: 1, infinite;
+        animation-iteration-count: 1, infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-direction: normal, alternate;
+        animation-direction: normal, alternate; }
+    .button-section .example-button.pop {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.pop:hover, .button-section .example-button.pop:active, .button-section .example-button.pop:focus {
+        -webkit-animation-name: hover-pop;
+        animation-name: hover-pop;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.pulse-grow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.pulse-grow:hover, .button-section .example-button.pulse-grow:active, .button-section .example-button.pulse-grow:focus {
+        -webkit-animation-name: hover-pulse-grow;
+        animation-name: hover-pulse-grow;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate; }
+    .button-section .example-button.pulse-shrink {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.pulse-shrink:hover, .button-section .example-button.pulse-shrink:active, .button-section .example-button.pulse-shrink:focus {
+        -webkit-animation-name: hover-pulse-shrink;
+        animation-name: hover-pulse-shrink;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate; }
+    .button-section .example-button.pulse {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.pulse:hover, .button-section .example-button.pulse:active, .button-section .example-button.pulse:focus {
+        -webkit-animation-name: hover-pulse;
+        animation-name: hover-pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite; }
+    .button-section .example-button.push {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.push:hover, .button-section .example-button.push:active, .button-section .example-button.push:focus {
+        -webkit-animation-name: hover-push;
+        animation-name: hover-push;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.rotate {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.rotate:hover, .button-section .example-button.rotate:active, .button-section .example-button.rotate:focus {
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg); }
+    .button-section .example-button.shrink {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.shrink:hover, .button-section .example-button.shrink:active, .button-section .example-button.shrink:focus {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9); }
+    .button-section .example-button.skew-backward {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%; }
+      .button-section .example-button.skew-backward:hover, .button-section .example-button.skew-backward:active, .button-section .example-button.skew-backward:focus {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg); }
+    .button-section .example-button.skew-forward {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%; }
+      .button-section .example-button.skew-forward:hover, .button-section .example-button.skew-forward:active, .button-section .example-button.skew-forward:focus {
+        -webkit-transform: skew(-10deg);
+        transform: skew(-10deg); }
+    .button-section .example-button.skew {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.skew:hover, .button-section .example-button.skew:active, .button-section .example-button.skew:focus {
+        -webkit-transform: skew(-10deg);
+        transform: skew(-10deg); }
+    .button-section .example-button.wobble-fixed-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform-origin: 0 100%;
+      transform-origin: 0 100%; }
+      .button-section .example-button.wobble-fixed-top:hover, .button-section .example-button.wobble-fixed-top:active, .button-section .example-button.wobble-fixed-top:focus {
+        -webkit-animation-name: hover-wobble;
+        animation-name: hover-wobble;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.wobble-fixed-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transform-origin: 100% 0;
+      transform-origin: 100% 0; }
+      .button-section .example-button.wobble-fixed-bottom:hover, .button-section .example-button.wobble-fixed-bottom:active, .button-section .example-button.wobble-fixed-bottom:focus {
+        -webkit-animation-name: hover-wobble;
+        animation-name: hover-wobble;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.wobble-move-horizontal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.wobble-move-horizontal:hover, .button-section .example-button.wobble-move-horizontal:active, .button-section .example-button.wobble-move-horizontal:focus {
+        -webkit-animation-name: hover-wobble-horizontal;
+        animation-name: hover-wobble-horizontal;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.wobble-move-vertical {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.wobble-move-vertical:hover, .button-section .example-button.wobble-move-vertical:active, .button-section .example-button.wobble-move-vertical:focus {
+        -webkit-animation-name: hover-wobble-vertical;
+        animation-name: hover-wobble-vertical;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.wobble-move-diagonal-up {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.wobble-move-diagonal-up:hover, .button-section .example-button.wobble-move-diagonal-up:active, .button-section .example-button.wobble-move-diagonal-up:focus {
+        -webkit-animation-name: hover-wobble-diagonal-up;
+        animation-name: hover-wobble-diagonal-up;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.wobble-move-diagonal-down {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale; }
+      .button-section .example-button.wobble-move-diagonal-down:hover, .button-section .example-button.wobble-move-diagonal-down:active, .button-section .example-button.wobble-move-diagonal-down:focus {
+        -webkit-animation-name: hover-wobble-diagonal-down;
+        animation-name: hover-wobble-diagonal-down;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1; }
+    .button-section .example-button.back-pulse {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color; }
+      .button-section .example-button.back-pulse:hover, .button-section .example-button.back-pulse:active, .button-section .example-button.back-pulse:focus {
+        -webkit-animation-name: hover-back-pulse;
+        animation-name: hover-back-pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        background-color: #ef8f00;
+        color: white; }
+    .button-section .example-button.bounce-to-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      position: relative; }
+      .button-section .example-button.bounce-to-top::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0); }
+      .button-section .example-button.bounce-to-top:hover, .button-section .example-button.bounce-to-top:active, .button-section .example-button.bounce-to-top:focus {
+        color: #000; }
+        .button-section .example-button.bounce-to-top:hover::before, .button-section .example-button.bounce-to-top:active::before, .button-section .example-button.bounce-to-top:focus::before {
+          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+    .button-section .example-button.bounce-to-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      position: relative; }
+      .button-section .example-button.bounce-to-right::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0); }
+      .button-section .example-button.bounce-to-right:hover, .button-section .example-button.bounce-to-right:active, .button-section .example-button.bounce-to-right:focus {
+        color: #000; }
+        .button-section .example-button.bounce-to-right:hover::before, .button-section .example-button.bounce-to-right:active::before, .button-section .example-button.bounce-to-right:focus::before {
+          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .button-section .example-button.bounce-to-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      position: relative; }
+      .button-section .example-button.bounce-to-bottom::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0); }
+      .button-section .example-button.bounce-to-bottom:hover, .button-section .example-button.bounce-to-bottom:active, .button-section .example-button.bounce-to-bottom:focus {
+        color: #000; }
+        .button-section .example-button.bounce-to-bottom:hover::before, .button-section .example-button.bounce-to-bottom:active::before, .button-section .example-button.bounce-to-bottom:focus::before {
+          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+    .button-section .example-button.bounce-to-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      position: relative; }
+      .button-section .example-button.bounce-to-left::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0); }
+      .button-section .example-button.bounce-to-left:hover, .button-section .example-button.bounce-to-left:active, .button-section .example-button.bounce-to-left:focus {
+        color: #000; }
+        .button-section .example-button.bounce-to-left:hover::before, .button-section .example-button.bounce-to-left:active::before, .button-section .example-button.bounce-to-left:focus::before {
+          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .button-section .example-button.fade {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color; }
+      .button-section .example-button.fade:hover, .button-section .example-button.fade:active, .button-section .example-button.fade:focus {
+        background-color: #ef8f00;
+        color: white; }
+    .button-section .example-button.radial-in {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative;
+      overflow: hidden;
+      background: #ef8f00; }
+      .button-section .example-button.radial-in::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 100%;
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        background: #faaf40; }
+      .button-section .example-button.radial-in:hover, .button-section .example-button.radial-in:active, .button-section .example-button.radial-in:focus {
+        color: #000; }
+        .button-section .example-button.radial-in:hover::before, .button-section .example-button.radial-in:active::before, .button-section .example-button.radial-in:focus::before {
+          -webkit-transform: scale(0);
+          transform: scale(0); }
+    .button-section .example-button.radial-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative;
+      overflow: hidden;
+      background: #faaf40; }
+      .button-section .example-button.radial-out::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 100%;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        background: #ef8f00; }
+      .button-section .example-button.radial-out:hover, .button-section .example-button.radial-out:active, .button-section .example-button.radial-out:focus {
+        color: #000; }
+        .button-section .example-button.radial-out:hover::before, .button-section .example-button.radial-out:active::before, .button-section .example-button.radial-out:focus::before {
+          -webkit-transform: scale(2);
+          transform: scale(2); }
+    .button-section .example-button.rectangle-in {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative;
+      border-radius: 0;
+      background: #ef8f00; }
+      .button-section .example-button.rectangle-in::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        background: #faaf40; }
+      .button-section .example-button.rectangle-in:hover, .button-section .example-button.rectangle-in:active, .button-section .example-button.rectangle-in:focus {
+        color: #000; }
+        .button-section .example-button.rectangle-in:hover::before, .button-section .example-button.rectangle-in:active::before, .button-section .example-button.rectangle-in:focus::before {
+          -webkit-transform: scale(0);
+          transform: scale(0); }
+    .button-section .example-button.rectangle-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative;
+      border-radius: 0;
+      background: #faaf40; }
+      .button-section .example-button.rectangle-out::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        background: #ef8f00; }
+      .button-section .example-button.rectangle-out:hover, .button-section .example-button.rectangle-out:active, .button-section .example-button.rectangle-out:focus {
+        color: #000; }
+        .button-section .example-button.rectangle-out:hover::before, .button-section .example-button.rectangle-out:active::before, .button-section .example-button.rectangle-out:focus::before {
+          -webkit-transform: scale(1);
+          transform: scale(1); }
+    .button-section .example-button.shutter-in-horizontal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      background: #ef8f00;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .button-section .example-button.shutter-in-horizontal::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #faaf40;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.shutter-in-horizontal:hover, .button-section .example-button.shutter-in-horizontal:active, .button-section .example-button.shutter-in-horizontal:focus {
+        color: white; }
+        .button-section .example-button.shutter-in-horizontal:hover::before, .button-section .example-button.shutter-in-horizontal:active::before, .button-section .example-button.shutter-in-horizontal:focus::before {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0); }
+    .button-section .example-button.shutter-in-vertical {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      background: #ef8f00;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .button-section .example-button.shutter-in-vertical::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #faaf40;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.shutter-in-vertical:hover, .button-section .example-button.shutter-in-vertical:active, .button-section .example-button.shutter-in-vertical:focus {
+        color: white; }
+        .button-section .example-button.shutter-in-vertical:hover::before, .button-section .example-button.shutter-in-vertical:active::before, .button-section .example-button.shutter-in-vertical:focus::before {
+          -webkit-transform: scaleY(0);
+          transform: scaleY(0); }
+    .button-section .example-button.shutter-out-horizontal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      background: #faaf40;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .button-section .example-button.shutter-out-horizontal::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ef8f00;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.shutter-out-horizontal:hover, .button-section .example-button.shutter-out-horizontal:active, .button-section .example-button.shutter-out-horizontal:focus {
+        color: white; }
+        .button-section .example-button.shutter-out-horizontal:hover::before, .button-section .example-button.shutter-out-horizontal:active::before, .button-section .example-button.shutter-out-horizontal:focus::before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .button-section .example-button.shutter-out-vertical {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      background: #faaf40;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+      .button-section .example-button.shutter-out-vertical::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ef8f00;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.shutter-out-vertical:hover, .button-section .example-button.shutter-out-vertical:active, .button-section .example-button.shutter-out-vertical:focus {
+        color: white; }
+        .button-section .example-button.shutter-out-vertical:hover::before, .button-section .example-button.shutter-out-vertical:active::before, .button-section .example-button.shutter-out-vertical:focus::before {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+    .button-section .example-button.sweep-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative; }
+      .button-section .example-button.sweep-top::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0); }
+      .button-section .example-button.sweep-top:hover, .button-section .example-button.sweep-top:active, .button-section .example-button.sweep-top:focus {
+        color: #000; }
+        .button-section .example-button.sweep-top:hover::before, .button-section .example-button.sweep-top:active::before, .button-section .example-button.sweep-top:focus::before {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+    .button-section .example-button.sweep-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative; }
+      .button-section .example-button.sweep-right::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0); }
+      .button-section .example-button.sweep-right:hover, .button-section .example-button.sweep-right:active, .button-section .example-button.sweep-right:focus {
+        color: #000; }
+        .button-section .example-button.sweep-right:hover::before, .button-section .example-button.sweep-right:active::before, .button-section .example-button.sweep-right:focus::before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .button-section .example-button.sweep-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative; }
+      .button-section .example-button.sweep-bottom::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0); }
+      .button-section .example-button.sweep-bottom:hover, .button-section .example-button.sweep-bottom:active, .button-section .example-button.sweep-bottom:focus {
+        color: #000; }
+        .button-section .example-button.sweep-bottom:hover::before, .button-section .example-button.sweep-bottom:active::before, .button-section .example-button.sweep-bottom:focus::before {
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
+    .button-section .example-button.sweep-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      position: relative; }
+      .button-section .example-button.sweep-left::before {
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        border-radius: 0;
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0); }
+      .button-section .example-button.sweep-left:hover, .button-section .example-button.sweep-left:active, .button-section .example-button.sweep-left:focus {
+        color: #000; }
+        .button-section .example-button.sweep-left:hover::before, .button-section .example-button.sweep-left:active::before, .button-section .example-button.sweep-left:focus::before {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+    .button-section .example-button.border-fade {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow;
+      box-shadow: inset 0 0 0 4px #faaf40, 0 0 1px transparent; }
+      .button-section .example-button.border-fade:hover, .button-section .example-button.border-fade:active, .button-section .example-button.border-fade:focus {
+        box-shadow: inset 0 0 0 4px #ef8f00, 0 0 1px transparent; }
+    .button-section .example-button.hollow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: background;
+      transition-property: background;
+      box-shadow: inset 0 0 0 4px #faaf40, 0 0 1px transparent; }
+      .button-section .example-button.hollow:hover, .button-section .example-button.hollow:active, .button-section .example-button.hollow:focus {
+        background: none; }
+    .button-section .example-button.outline-in {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.outline-in::before {
+        pointer-events: none;
+        content: '';
+        position: absolute;
+        border: #faaf40 solid 4px;
+        top: -16px;
+        right: -16px;
+        bottom: -16px;
+        left: -16px;
+        opacity: 0;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: top, right, bottom, left;
+        transition-property: top, right, bottom, left; }
+      .button-section .example-button.outline-in:hover::before, .button-section .example-button.outline-in:focus::before, .button-section .example-button.outline-in:active::before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+        opacity: 1; }
+    .button-section .example-button.outline-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.outline-out::before {
+        content: '';
+        position: absolute;
+        border: #faaf40 solid 4px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: top, right, bottom, left;
+        transition-property: top, right, bottom, left; }
+      .button-section .example-button.outline-out:hover::before, .button-section .example-button.outline-out:focus::before, .button-section .example-button.outline-out:active::before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px; }
+    .button-section .example-button.overline-from-center {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.overline-from-center::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        top: 0;
+        background: #ef8f00;
+        height: 4px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.overline-from-center:hover::before, .button-section .example-button.overline-from-center:active::before, .button-section .example-button.overline-from-center:focus::before {
+        left: 0;
+        right: 0; }
+    .button-section .example-button.overline-from-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.overline-from-left::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        top: 0;
+        background: #ef8f00;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.overline-from-left:hover::before, .button-section .example-button.overline-from-left:active::before, .button-section .example-button.overline-from-left:focus::before {
+        right: 0; }
+    .button-section .example-button.overline-from-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.overline-from-right::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 100%;
+        right: 0;
+        top: 0;
+        background: #ef8f00;
+        height: 4px;
+        -webkit-transition-property: left;
+        transition-property: left;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.overline-from-right:hover::before, .button-section .example-button.overline-from-right:active::before, .button-section .example-button.overline-from-right:focus::before {
+        left: 0; }
+    .button-section .example-button.overline-reveal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.overline-reveal::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: #ef8f00;
+        height: 4px;
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.overline-reveal:hover::before, .button-section .example-button.overline-reveal:active::before, .button-section .example-button.overline-reveal:focus::before {
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+    .button-section .example-button.reveal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.reveal::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-color: #ef8f00;
+        border-style: solid;
+        border-width: 0;
+        -webkit-transition-property: border-width;
+        transition-property: border-width;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.reveal:hover::before, .button-section .example-button.reveal:active::before, .button-section .example-button.reveal:focus::before {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        border-width: 4px; }
+    .button-section .example-button.ripple-in {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.ripple-in::before {
+        content: '';
+        position: absolute;
+        border: #faaf40 solid 4px;
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s; }
+      .button-section .example-button.ripple-in:hover::before, .button-section .example-button.ripple-in:focus::before, .button-section .example-button.ripple-in:active::before {
+        -webkit-animation-name: hover-ripple-in;
+        animation-name: hover-ripple-in; }
+    .button-section .example-button.ripple-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.ripple-out::before {
+        content: '';
+        position: absolute;
+        border: #faaf40 solid 6px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s; }
+      .button-section .example-button.ripple-out:hover::before, .button-section .example-button.ripple-out:focus::before, .button-section .example-button.ripple-out:active::before {
+        -webkit-animation-name: hover-ripple-out;
+        animation-name: hover-ripple-out; }
+    .button-section .example-button.round-corners {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: border-radius;
+      transition-property: border-radius; }
+      .button-section .example-button.round-corners:hover, .button-section .example-button.round-corners:active, .button-section .example-button.round-corners:focus {
+        border-radius: 1em; }
+    .button-section .example-button.trim {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.trim::before {
+        content: '';
+        position: absolute;
+        border: white solid 4px;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+        opacity: 0;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: opacity;
+        transition-property: opacity; }
+      .button-section .example-button.trim:hover::before, .button-section .example-button.trim:focus::before, .button-section .example-button.trim:active::before {
+        opacity: 1; }
+    .button-section .example-button.underline-reveal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.underline-reveal::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ef8f00;
+        height: 4px;
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
+      .button-section .example-button.underline-reveal:hover::before, .button-section .example-button.underline-reveal:active::before, .button-section .example-button.underline-reveal:focus::before {
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+    .button-section .example-button.underline-from-center {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.underline-from-center::before {
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        background: #ef8f00;
+        height: 5px;
+        right: 50%;
+        left: 50%; }
+      .button-section .example-button.underline-from-center:hover::before, .button-section .example-button.underline-from-center:active::before, .button-section .example-button.underline-from-center:focus::before {
+        left: 0;
+        right: 0; }
+    .button-section .example-button.underline-from-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.underline-from-left::before {
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        background: #ef8f00;
+        height: 5px;
+        right: 100%;
+        left: 0; }
+      .button-section .example-button.underline-from-left:hover::before, .button-section .example-button.underline-from-left:active::before, .button-section .example-button.underline-from-left:focus::before {
+        left: 0;
+        right: 0; }
+    .button-section .example-button.underline-from-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden; }
+      .button-section .example-button.underline-from-right::before {
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        background: #ef8f00;
+        height: 5px;
+        right: 0;
+        left: 100%; }
+      .button-section .example-button.underline-from-right:hover::before, .button-section .example-button.underline-from-right:active::before, .button-section .example-button.underline-from-right:focus::before {
+        left: 0;
+        right: 0; }
+    .button-section .example-button.box-shadow-inset {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow;
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.6), 0 0 1px transparent; }
+      .button-section .example-button.box-shadow-inset:hover, .button-section .example-button.box-shadow-inset:active, .button-section .example-button.box-shadow-inset:focus {
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.6), 0 0 1px transparent; }
+    .button-section .example-button.box-shadow-outset {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow; }
+      .button-section .example-button.box-shadow-outset:hover, .button-section .example-button.box-shadow-outset:active, .button-section .example-button.box-shadow-outset:focus {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); }
+    .button-section .example-button.float-shadow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.float-shadow::before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 0;
+        background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform, opacity;
+        transition-property: transform, opacity; }
+      .button-section .example-button.float-shadow:hover, .button-section .example-button.float-shadow:active, .button-section .example-button.float-shadow:focus {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px); }
+        .button-section .example-button.float-shadow:hover::before, .button-section .example-button.float-shadow:active::before, .button-section .example-button.float-shadow:focus::before {
+          opacity: 1;
+          -webkit-transform: translateY(5px);
+          transform: translateY(5px); }
+    .button-section .example-button.glow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow; }
+      .button-section .example-button.glow:hover, .button-section .example-button.glow:active, .button-section .example-button.glow:focus {
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+    .button-section .example-button.grow-shadow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow, transform;
+      transition-property: box-shadow, transform; }
+      .button-section .example-button.grow-shadow:hover, .button-section .example-button.grow-shadow:active, .button-section .example-button.grow-shadow:focus {
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+    .button-section .example-button.shadow-radial {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.shadow-radial::before, .button-section .example-button.shadow-radial::after {
+        pointer-events: none;
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        height: 5px;
+        opacity: 0;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: opacity;
+        transition-property: opacity; }
+      .button-section .example-button.shadow-radial::before {
+        bottom: 100%;
+        background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, 0.6) 0%, transparent 80%);
+        background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, transparent 80%); }
+      .button-section .example-button.shadow-radial::after {
+        top: 100%;
+        background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, 0.6) 0%, transparent 80%);
+        background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, transparent 80%); }
+      .button-section .example-button.shadow-radial:hover::before, .button-section .example-button.shadow-radial:focus::before, .button-section .example-button.shadow-radial:active::before, .button-section .example-button.shadow-radial:hover::after, .button-section .example-button.shadow-radial:focus::after, .button-section .example-button.shadow-radial:active::after {
+        opacity: 1; }
+    .button-section .example-button.shadow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow; }
+      .button-section .example-button.shadow:hover, .button-section .example-button.shadow:active, .button-section .example-button.shadow:focus {
+        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5); }
+    .button-section .example-button.bubble-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.bubble-top::before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        border-style: solid;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        left: calc(50% - 10px);
+        top: 0;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #faaf40 transparent; }
+      .button-section .example-button.bubble-top:hover::before, .button-section .example-button.bubble-top:focus::before, .button-section .example-button.bubble-top:active::before {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px); }
+    .button-section .example-button.bubble-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.bubble-right::before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        border-style: solid;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        top: calc(50% - 10px);
+        right: 0;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #faaf40; }
+      .button-section .example-button.bubble-right:hover::before, .button-section .example-button.bubble-right:focus::before, .button-section .example-button.bubble-right:active::before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px); }
+    .button-section .example-button.bubble-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.bubble-bottom::before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        border-style: solid;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        left: calc(50% - 10px);
+        bottom: 0;
+        border-width: 10px 10px 0 10px;
+        border-color: #faaf40 transparent transparent transparent; }
+      .button-section .example-button.bubble-bottom:hover::before, .button-section .example-button.bubble-bottom:focus::before, .button-section .example-button.bubble-bottom:active::before {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px); }
+    .button-section .example-button.bubble-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative; }
+      .button-section .example-button.bubble-left::before {
+        pointer-events: none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        border-style: solid;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        top: calc(50% - 10px);
+        left: 0;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #faaf40 transparent transparent; }
+      .button-section .example-button.bubble-left:hover::before, .button-section .example-button.bubble-left:focus::before, .button-section .example-button.bubble-left:active::before {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px); }
+    .button-section .example-button.bubble-float-top {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.bubble-float-top::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        left: calc(50% - 10px);
+        top: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #faaf40 transparent;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform; }
+      .button-section .example-button.bubble-float-top:hover, .button-section .example-button.bubble-float-top:active, .button-section .example-button.bubble-float-top:focus {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px); }
+        .button-section .example-button.bubble-float-top:hover::before, .button-section .example-button.bubble-float-top:active::before, .button-section .example-button.bubble-float-top:focus::before {
+          -webkit-transform: translateY(-10px);
+          transform: translateY(-10px); }
+    .button-section .example-button.bubble-float-right {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.bubble-float-right::before {
+        position: absolute;
+        z-index: -1;
+        top: calc(50% - 10px);
+        right: 0;
+        content: '';
+        border-style: solid;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #faaf40;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform; }
+      .button-section .example-button.bubble-float-right:hover, .button-section .example-button.bubble-float-right:active, .button-section .example-button.bubble-float-right:focus {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px); }
+        .button-section .example-button.bubble-float-right:hover::before, .button-section .example-button.bubble-float-right:active::before, .button-section .example-button.bubble-float-right:focus::before {
+          -webkit-transform: translateX(10px);
+          transform: translateX(10px); }
+    .button-section .example-button.bubble-float-bottom {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.bubble-float-bottom::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        left: calc(50% - 10px);
+        bottom: 0;
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #faaf40 transparent transparent transparent;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform; }
+      .button-section .example-button.bubble-float-bottom:hover, .button-section .example-button.bubble-float-bottom:active, .button-section .example-button.bubble-float-bottom:focus {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px); }
+        .button-section .example-button.bubble-float-bottom:hover::before, .button-section .example-button.bubble-float-bottom:active::before, .button-section .example-button.bubble-float-bottom:focus::before {
+          -webkit-transform: translateY(10px);
+          transform: translateY(10px); }
+    .button-section .example-button.bubble-float-left {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+      .button-section .example-button.bubble-float-left::before {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: calc(50% - 10px);
+        left: 0;
+        border-style: solid;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #faaf40 transparent transparent;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform; }
+      .button-section .example-button.bubble-float-left:hover, .button-section .example-button.bubble-float-left:active, .button-section .example-button.bubble-float-left:focus {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px); }
+        .button-section .example-button.bubble-float-left:hover::before, .button-section .example-button.bubble-float-left:active::before, .button-section .example-button.bubble-float-left:focus::before {
+          -webkit-transform: translateX(-10px);
+          transform: translateX(-10px); }
 
 /*# sourceMappingURL=main.css.map */

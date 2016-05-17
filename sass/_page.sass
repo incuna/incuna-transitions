@@ -1,207 +1,303 @@
+$primaryColor: $orange
+$activeColor: $orange-alt
+$tipColor: $orange
+
+
 .button-section
     margin:
         bottom: $site-padding
 
-
     .example-button
+        cursor: pointer
         display: inline-block
         margin: 10px
         padding: $button-padding
         border: 0
-        background: white
+        background: $orange
+        color: #000
         font:
             size: 18px
+            weight: 700
         text-transform: capitalize
 
         // 2D Transitions
         &.bob
+            @include bob
 
-        &.bounce
+        &.bounce-in
+            @include bounce
+        &.bounce-out
+            @include bounce(0.8)
 
         &.buzz-out
-
+            @include buzz-out
         &.buzz
+            @include buzz
 
-        &.float
+        &.float-up
+            @include float
+        &.float-down
+            @include float(down)
 
         &.grow-rotate
-
+            @include grow-rotate
         &.grow
+            @include grow
 
         &.hang
+            @include hang
 
         &.pop
+            @include pop
 
         &.pulse-grow
-
+            @include pulse-grow
         &.pulse-shrink
-
+            @include pulse-shrink
         &.pulse
+            @include pulse
 
         &.push
+            @include push
 
         &.rotate
+            @include rotate
 
         &.shrink
+            @include shrink
 
         &.skew-backward
-
+            @include skew-backward
         &.skew-forward
-
+            @include skew-forward
         &.skew
+            @include skew
 
-        &.wobble-fixed
+        &.wobble-fixed-top
+            @include wobble-fixed(top)
+        &.wobble-fixed-bottom
+            @include wobble-fixed(bottom)
 
-        &.wobble-move
-
+        &.wobble-move-horizontal
+            @include wobble-move
+        &.wobble-move-vertical
+            @include wobble-move(vertical)
+        &.wobble-move-diagonal-up
+            @include wobble-move(diagonal-up)
+        &.wobble-move-diagonal-down
+            @include wobble-move(diagonal-down)
 
         // Background Transitions
         &.back-pulse
+            @include back-pulse
 
-        &.bounce-to
+        &.bounce-to-top
+            @include bounce-to(top, $activeColor, $text-color)
+        &.bounce-to-right
+            @include bounce-to(right, $activeColor, $text-color)
+        &.bounce-to-bottom
+            @include bounce-to(bottom, $activeColor, $text-color)
+        &.bounce-to-left
+            @include bounce-to(left, $activeColor, $text-color)
 
         &.fade
+            @include fade
 
-        &.radial
+        &.radial-in
+            @include radial(in, $orange, $activeColor, $text-color)
+        &.radial-out
+            @include radial(out, $orange, $activeColor, $text-color)
 
-        &.rectangle
+        &.rectangle-in
+            @include rectangle(in, $orange, $activeColor, $text-color)
+        &.rectangle-out
+            @include rectangle(out, $orange, $activeColor, $text-color)
 
         &.shutter-in-horizontal
-
+            @include shutter-in-horizontal
         &.shutter-in-vertical
-
+            @include shutter-in-vertical
         &.shutter-out-horizontal
-
+            @include shutter-out-horizontal
         &.shutter-out-vertical
+            @include shutter-out-vertical
 
-        &.sweep
-
+        &.sweep-top
+            @include sweep(top, $activeColor, $text-color)
+        &.sweep-right
+            @include sweep(right, $activeColor, $text-color)
+        &.sweep-bottom
+            @include sweep(bottom, $activeColor, $text-color)
+        &.sweep-left
+            @include sweep(left, $activeColor, $text-color)
 
         // Border Transitions
         &.border-fade
+            @include border-fade
 
         &.hollow
+            @include hollow
 
         &.outline-in
-
+            @include outline-in
         &.outline-out
+            @include outline-out
 
         &.overline-from-center
-
+            @include overline-from-center
         &.overline-from-left
-
+            @include overline-from-left
         &.overline-from-right
-
+            @include overline-from-right
         &.overline-reveal
+            @include overline-reveal
 
         &.reveal
+            @include reveal
 
         &.ripple-in
-
+            @include ripple-in
         &.ripple-out
+            @include ripple-out
 
         &.round-corners
+            @include round-corners
 
         &.trim
+            @include trim
 
         &.underline-reveal
+            @include underline-reveal
+        &.underline-from-center
+            @include underline(center, $activeColor, 5px)
+        &.underline-from-left
+            @include underline(left, $activeColor, 5px)
+        &.underline-from-right
+            @include underline(right, $activeColor, 5px)
 
-        &.underline
 
+        // // Icon Transitions
+        // &.icon-back
+        //     @include
 
-        // Icon Transitions
-        &.icon-back
+        // &.icon-bob
+        //     @include
 
-        &.icon-bob
+        // &.icon-bounce-out
+        //     @include
 
-        &.icon-bounce-out
+        // &.icon-bounce
+        //     @include
 
-        &.icon-bounce
+        // &.icon-buzz-out
+        //     @include
 
-        &.icon-buzz-out
+        // &.icon-buzz
+        //     @include
 
-        &.icon-buzz
+        // &.icon-down
+        //     @include
 
-        &.icon-down
+        // &.icon-drop
+        //     @include
 
-        &.icon-drop
+        // &.icon-fade
+        //     @include
 
-        &.icon-fade
+        // &.icon-float-away
+        //     @include
 
-        &.icon-float-away
+        // &.icon-float
+        //     @include
 
-        &.icon-float
+        // &.icon-forward
+        //     @include
 
-        &.icon-forward
+        // &.icon-grow-rotate
+        //     @include
 
-        &.icon-grow-rotate
+        // &.icon-grow
+        //     @include
 
-        &.icon-grow
+        // &.icon-hang
+        //     @include
 
-        &.icon-hang
+        // &.icon-pop
+        //     @include
 
-        &.icon-pop
+        // &.icon-pulse-grow
+        //     @include
 
-        &.icon-pulse-grow
+        // &.icon-pulse-shrink
+        //     @include
 
-        &.icon-pulse-shrink
+        // &.icon-pulse
+        //     @include
 
-        &.icon-pulse
+        // &.icon-push
+        //     @include
 
-        &.icon-push
+        // &.icon-rotate
+        //     @include
 
-        &.icon-rotate
+        // &.icon-shrink
+        //     @include
 
-        &.icon-shrink
+        // &.icon-sink-away
+        //     @include
 
-        &.icon-sink-away
+        // &.icon-sink
+        //     @include
 
-        &.icon-sink
+        // &.icon-spin
+        //     @include
 
-        &.icon-spin
+        // &.icon-up
+        //     @include
 
-        &.icon-up
+        // &.icon-wobble-horizontal
+        //     @include
 
-        &.icon-wobble-horizontal
-
-        &.icon-wobble-vertical
+        // &.icon-wobble-vertical
+        //     @include
 
 
         // Shadow and Glow Transitions
         &.box-shadow-inset
-
+            @include box-shadow-inset
         &.box-shadow-outset
+            @include box-shadow-outset
 
         &.float-shadow
+            @include float-shadow
 
         &.glow
+            @include glow
 
         &.grow-shadow
+            @include grow-shadow
 
         &.shadow-radial
+            @include shadow-radial
 
         &.shadow
-
+            @include shadow
 
         // Speech Bubbles
+        &.bubble-top
+            @include bubble-top
+        &.bubble-right
+            @include bubble-right
         &.bubble-bottom
-
-        &.bubble-float-bottom
-
-        &.bubble-float-left
-
-        &.bubble-float-right
+            @include bubble-bottom
+        &.bubble-left
+            @include bubble-left
 
         &.bubble-float-top
-
-        &.bubble-left
-
-        &.bubble-right
-
-        &.bubble-top
-
-
-
-
-
-
+            @include bubble-float-top
+        &.bubble-float-right
+            @include bubble-float-right
+        &.bubble-float-bottom
+            @include bubble-float-bottom
+        &.bubble-float-left
+            @include bubble-float-left

@@ -19,7 +19,7 @@
                 <a class="forkme-banner" href="https://github.com/incuna/incuna-transitions">View on GitHub</a>
 
                 <h1 class="project-title">Incuna-transitions</h1>
-                <h2 class="project-tagline">Incuna's transitions and animations library. A combination of sass mixins sourced from @IanLunn's <a href="http://ianlunn.github.io/Hover/">Hover.css</a></h2>
+                <h2 class="project-tagline">Incuna's transitions and animations library. A combination of sass mixins sourced from @IanLunn's <a href="http://ianlunn.github.io/Hover/">Hover.css</a> and page transitions from Incuna.</h2>
             </header>
         </div>
 
@@ -30,14 +30,17 @@
                 <h3>Hover transitions</h3>
                 <p class="intro">These transitions can be applied to buttons, links, nav items and other interactive page elements. They all work on mouse over.</p>
 
+                <!-- 2D TRANSITIONS -->
                 <div class="button-section 2d-transitions">
                     <h4>2D Transitions</h4>
 
                     <button class="example-button bob">bob</button>
-                    <button class="example-button bounce">bounce</button>
+                    <button class="example-button bounce-in">bounce-in</button>
+                    <button class="example-button bounce-out">bounce-out</button>
                     <button class="example-button buzz-out">buzz-out</button>
                     <button class="example-button buzz">buzz</button>
-                    <button class="example-button float">float</button>
+                    <button class="example-button float-up">float-up</button>
+                    <button class="example-button float-down">float-down</button>
                     <button class="example-button grow-rotate">grow-rotate</button>
                     <button class="example-button grow">grow</button>
                     <button class="example-button hang">hang</button>
@@ -51,25 +54,39 @@
                     <button class="example-button skew-backward">skew-backward</button>
                     <button class="example-button skew-forward">skew-forward</button>
                     <button class="example-button skew">skew</button>
-                    <button class="example-button wobble-fixed">wobble-fixed</button>
-                    <button class="example-button wobble-move">wobble-move</button>
+                    <button class="example-button wobble-fixed-top">wobble-fixed-top</button>
+                    <button class="example-button wobble-fixed-bottom">wobble-fixed-bottom</button>
+                    <button class="example-button wobble-move-horizontal">wobble-move-horizontal</button>
+                    <button class="example-button wobble-move-vertical">wobble-move-vertical</button>
+                    <button class="example-button wobble-move-diagonal-up">wobble-move-diagonal-up</button>
+                    <button class="example-button wobble-move-diagonal-down">wobble-move-diagonal-down</button>
                 </div>
 
+                <!-- BACKGROUND TRANSITIONS -->
                 <div class="button-section background-transitions">
                     <h4>Background Transitions</h4>
 
                     <button class="example-button back-pulse">back-pulse</button>
-                    <button class="example-button bounce-to">bounce-to</button>
+                    <button class="example-button bounce-to-top">bounce-to-top</button>
+                    <button class="example-button bounce-to-right">bounce-to-right</button>
+                    <button class="example-button bounce-to-bottom">bounce-to-bottom</button>
+                    <button class="example-button bounce-to-left">bounce-to-left</button>
                     <button class="example-button fade">fade</button>
-                    <button class="example-button radial">radial</button>
-                    <button class="example-button rectangle">rectangle</button>
+                    <button class="example-button radial-in">radial-in</button>
+                    <button class="example-button radial-out">radial-out</button>
+                    <button class="example-button rectangle-in">rectangle-in</button>
+                    <button class="example-button rectangle-out">rectangle-out</button>
                     <button class="example-button shutter-in-horizontal">shutter-in-horizontal</button>
                     <button class="example-button shutter-in-vertical">shutter-in-vertical</button>
                     <button class="example-button shutter-out-horizontal">shutter-out-horizontal</button>
                     <button class="example-button shutter-out-vertical">shutter-out-vertical</button>
-                    <button class="example-button sweep">sweep</button>
+                    <button class="example-button sweep-top">sweep-top</button>
+                    <button class="example-button sweep-right">sweep-right</button>
+                    <button class="example-button sweep-bottom">sweep-bottom</button>
+                    <button class="example-button sweep-left">sweep-left</button>
                 </div>
 
+                <!-- BORDER TRANSITIONS -->
                 <div class="button-section border-transitions">
                     <h4>Border Transitions</h4>
 
@@ -87,42 +104,130 @@
                     <button class="example-button round-corners">round-corners</button>
                     <button class="example-button trim">trim</button>
                     <button class="example-button underline-reveal">underline-reveal</button>
-                    <button class="example-button underline">underline</button>
+                    <button class="example-button underline-from-center">underline-from-center</button>
+                    <button class="example-button underline-from-left">underline-from-left</button>
+                    <button class="example-button underline-from-right">underline-from-right</button>
                 </div>
 
+                <!-- ICON TRANSITIONS -->
                 <div class="button-section icon-transitions">
                     <h4>Icon Transitions</h4>
 
-                    <button class="example-button icon-back">icon-back</button>
-                    <button class="example-button icon-bob">icon-bob</button>
-                    <button class="example-button icon-bounce-out">icon-bounce-out</button>
-                    <button class="example-button icon-bounce">icon-bounce</button>
-                    <button class="example-button icon-buzz-out">icon-buzz-out</button>
-                    <button class="example-button icon-buzz">icon-buzz</button>
-                    <button class="example-button icon-down">icon-down</button>
-                    <button class="example-button icon-drop">icon-drop</button>
-                    <button class="example-button icon-fade">icon-fade</button>
-                    <button class="example-button icon-float-away">icon-float-away</button>
-                    <button class="example-button icon-float">icon-float</button>
-                    <button class="example-button icon-forward">icon-forward</button>
-                    <button class="example-button icon-grow-rotate">icon-grow-rotate</button>
-                    <button class="example-button icon-grow">icon-grow</button>
-                    <button class="example-button icon-hang">icon-hang</button>
-                    <button class="example-button icon-pop">icon-pop</button>
-                    <button class="example-button icon-pulse-grow">icon-pulse-grow</button>
-                    <button class="example-button icon-pulse-shrink">icon-pulse-shrink</button>
-                    <button class="example-button icon-pulse">icon-pulse</button>
-                    <button class="example-button icon-push">icon-push</button>
-                    <button class="example-button icon-rotate">icon-rotate</button>
-                    <button class="example-button icon-shrink">icon-shrink</button>
-                    <button class="example-button icon-sink-away">icon-sink-away</button>
-                    <button class="example-button icon-sink">icon-sink</button>
-                    <button class="example-button icon-spin">icon-spin</button>
-                    <button class="example-button icon-up">icon-up</button>
-                    <button class="example-button icon-wobble-horizontal">icon-wobble-horizontal</button>
-                    <button class="example-button icon-wobble-vertical">icon-wobble-vertical</button>
+                    <button class="example-button icon-back">
+                        <span>icon-back</span>
+                        <img src="images/svg/arrow-left.svg"></img>
+                    </button>
+                    <button class="example-button icon-bob">
+                        <span>icon-bob</span>
+                        <svg src="images/svg/upload.svg"></svg>
+                    </button>
+                    <button class="example-button icon-bounce-out">
+                        <span>icon-bounce-out</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-bounce">
+                        <span>icon-bounce</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-buzz-out">
+                        <span>icon-buzz-out</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-buzz">
+                        <span>icon-buzz</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-down">
+                        <span>icon-down</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-drop">
+                        <span>icon-drop</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-fade">
+                        <span>icon-fade</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-float-away">
+                        <span>icon-float-away</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-float">
+                        <span>icon-float</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-forward">
+                        <span>icon-forward</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-grow-rotate">
+                        <span>icon-grow-rotate</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-grow">
+                        <span>icon-grow</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-hang">
+                        <span>icon-hang</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-pop">
+                        <span>icon-pop</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-pulse-grow">
+                        <span>icon-pulse-grow</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-pulse-shrink">
+                        <span>icon-pulse-shrink</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-pulse">
+                        <span>icon-pulse</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-push">
+                        <span>icon-push</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-rotate">
+                        <span>icon-rotate</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-shrink">
+                        <span>icon-shrink</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-sink-away">
+                        <span>icon-sink-away</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-sink">
+                        <span>icon-sink</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-spin">
+                        <span>icon-spin</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-up">
+                        <span>icon-up</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-wobble-horizontal">
+                        <span>icon-wobble-horizontal</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
+                    <button class="example-button icon-wobble-vertical">
+                        <span>icon-wobble-vertical</span>
+                        <svg src="images/svg/blah.svg"></svg>
+                    </button>
                 </div>
 
+                <!-- SHADOW GLOW TRANSITIONS -->
                 <div class="button-section shadow-glow-transitions">
                     <h4>Shadow and Glow Transitions</h4>
 
@@ -135,6 +240,7 @@
                     <button class="example-button shadow">shadow</button>
                 </div>
 
+                <!-- SPEECH BUBBLES -->
                 <div class="button-section speech-bubbles">
                     <h4>Speech Bubbles</h4>
 
