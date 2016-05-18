@@ -60,20 +60,15 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', 'dev');
 
-    grunt.registerTask('dev', function () {
-        grunt.task.run([
-            'sass',
-            'svgstore',
-            'watch'
-        ]);
-    });
+    grunt.registerTask('dev', [
+        'sass',
+        'svgstore',
+        'watch'
+    ]);
 
-    grunt.registerTask('build', function () {
-        var tasks = [
-            'sass',
-            'svgstore'
-        ];
-        grunt.task.run(tasks);
-    });
+    grunt.registerTask('build', [
+        'sass',
+        'svgstore'
+    ]);
 
 }
