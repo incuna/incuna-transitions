@@ -53,6 +53,25 @@ module.exports = function (grunt) {
                 dest: 'images/svg-defs.svg',
                 src: ['images/icons/**/*.svg']
             }
+        },
+        process: {
+            demo: {
+                options: {
+                    data: {
+                        svgstore: function (filename) {
+                            var contents = grunt.file.read(filename);
+                            return contents;
+                        }
+                    }
+                },
+                files: [
+                    {
+                        src: 'index.html.template',
+                        // This is committed.
+                        dest: 'index.html'
+                    }
+                ]
+            }
         }
     });
 
@@ -70,5 +89,24 @@ module.exports = function (grunt) {
         'sass',
         'svgstore'
     ]);
+
+    grunt.registerTask('build-demo', [
+        'build',
+        'process:demo'
+    ]);
+
+    grunt.registerMultiTask('process', 'Process a file wtih data', function () {
+        var options = this.options();
+        this.files.forEach(function (file) {
+            var templateData = {
+                data: options.data
+            };
+            var contents = '';
+            file.src.forEach(function (filepath) {
+                contents += grunt.template.process(grunt.file.read(filepath), templateData);
+            });
+            grunt.file.write(file.dest, contents);
+        });
+    });
 
 }
