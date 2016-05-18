@@ -15,11 +15,16 @@ module.exports = function (grunt) {
             sass: {
                 files: [
                     '**/*.sass'
-
                 ],
                 tasks: [
                     'sass'
                 ]
+            },
+            svgstore: {
+                files: [
+                    'images/icons/**/*.svg'
+                ],
+                tasks: 'svgstore:main'
             }
         },
         sass: {
@@ -35,6 +40,19 @@ module.exports = function (grunt) {
                    'stylesheets/main.css': 'sass/main.sass'
                 }
             }
+        },
+        svgstore: {
+            options: {
+                prefix: 'svg-', // This will prefix each ID
+                svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
+                    viewBox: '0 0 100 100',
+                    xmlns: 'http://www.w3.org/2000/svg'
+                }
+            },
+            main: {
+                dest: 'images/svg-defs.svg',
+                src: ['images/icons/**/*.svg']
+            }
         }
     });
 
@@ -45,13 +63,15 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', function () {
         grunt.task.run([
             'sass',
+            'svgstore',
             'watch'
         ]);
     });
 
     grunt.registerTask('build', function () {
         var tasks = [
-            'sass'
+            'sass',
+            'svgstore'
         ];
         grunt.task.run(tasks);
     });
