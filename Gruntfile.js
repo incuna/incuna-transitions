@@ -40,6 +40,7 @@ module.exports = function (grunt) {
                 sourceMap: true,
                 sourceMapContents: true,
                 includePaths: [
+                    require('node-bourbon').includePaths,
                     'sass'
                 ]
             },

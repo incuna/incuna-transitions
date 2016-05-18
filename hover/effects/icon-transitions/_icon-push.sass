@@ -9,18 +9,17 @@
     position: relative
     padding-right: #{$spaceBetweenTextAndArrows}
 
-    &::before
+    .inline-svg
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
-        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
 
     #{$hover-states}
-        &::before
+        .inline-svg
             @include prefixed(animation-name, #{$nameSpace}-icon-push)
             @include prefixed(animation-duration, $mediumDuration)
             @include prefixed(animation-timing-function, linear)
