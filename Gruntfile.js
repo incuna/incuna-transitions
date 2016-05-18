@@ -25,6 +25,14 @@ module.exports = function (grunt) {
                     'images/icons/**/*.svg'
                 ],
                 tasks: 'svgstore:main'
+            },
+            demo: {
+                files: [
+                    'index.html.template'
+                ],
+                tasks: [
+                    'process:demo'
+                ]
             }
         },
         sass: {
