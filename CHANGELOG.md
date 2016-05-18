@@ -1,3 +1,10 @@
+# Upcoming
+
+* Create demo page using github pages
+* Set up grunt and svgstore for github page
+* A few minor mixin bugfixes
+* Get icon mixins to work with inline svg icons - WIP
+
 # 1.4.2
 
 * BUGFIX: fix background-transitions file to include correct files
