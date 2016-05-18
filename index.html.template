@@ -13,8 +13,9 @@
 
     <body class="incuna-transitions-page">
 
-        <%= svgstore('images/svg-defs.svg') %>
-        <svg class="inline-svg-map"></svg>
+        <div class="inline-svg-map">
+            <%= svgstore('images/svg-defs.svg') %>
+        </div>
 
         <!-- HEADER -->
         <div class="outer header-wrap">
