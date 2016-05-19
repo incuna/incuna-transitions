@@ -4,6 +4,7 @@
 * Set up grunt and svgstore for github page
 * A few minor mixin bugfixes
 * Get icon mixins to work with inline svg icons - WIP
+* Add more examples to the github page
 
 # 1.4.2
 
