@@ -4,7 +4,7 @@
 // Bounce-in used 1.2 as scale amount
 // Bounce-out use 0.8 as scale amount
 // You may enter any amount to scale by but the above are the recommended values
-@mixin bounce($amount)
+@mixin bounce($amount: 1.2)
     @include hacks()
     @include prefixed(transition-duration, $slowDuration)
 

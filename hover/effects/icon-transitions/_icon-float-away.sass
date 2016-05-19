@@ -12,19 +12,16 @@
     position: relative
     padding-right: #{$spaceBetweenTextAndArrows}
 
-    &::before,
-    &::after
-        content: ''
+    .inline-svg
         position: absolute
         right: 1em
         padding: 0 1px
 
-    &::after
         @include prefixed(animation-duration, #{$slowDuration})
         @include prefixed(animation-fill-mode, forwards)
         opacity: 0
 
     #{$hover-states}
-        &::after
+        .inline-svg
             @include prefixed(animation-name, #{$nameSpace}-icon-float-away)
             @include prefixed(animation-timing-function, ease-out)

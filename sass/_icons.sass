@@ -1,0 +1,20 @@
+// SVGSTORE
+.inline-svg-map
+    display: none
+
+// Inline SVGs using svgstore
+// Both selectors are needed, as one works
+// on firefox and one works on chrome
+.inline-svg-map svg,
+.inline-svg
+    *
+        fill: inherit
+
+.inline-svg
+    width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    fill: $text-color
+    margin:
+        left: 10px

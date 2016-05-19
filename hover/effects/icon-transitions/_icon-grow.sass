@@ -5,16 +5,15 @@
     position: relative
     padding-right: #{$spaceBetweenTextAndArrows}
 
-    &::before
+    .inline-svg
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
-        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
 
     #{$hover-states}
-        &::before
+        .inline-svg
             @include prefixed(transform, scale(1.3) translateZ(0))

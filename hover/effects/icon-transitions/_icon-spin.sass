@@ -4,15 +4,14 @@
     position: relative
     padding-right: 2.2em
 
-    &::before
+    .inline-svg
         @include prefixed(transition-duration, 1s)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-in-out)
-        content: ''
         position: absolute
         right: 1em
         padding: 0 1px
 
     #{$hover-states}
-        &::before
+        .inline-svg
             @include prefixed(transform, rotate(360deg))
