@@ -2,23 +2,85 @@ $primaryColor: $orange
 $activeColor: $orange-alt
 $tipColor: $orange
 
+.main-content
+    a
+        @include animate-transition(color)
+        #{$hover-states}
+            color: $activeColor
+            text-decoration: none
+
+.note
+    background: #ddd
+    font:
+        weight: 700
+        size: 14px
+    padding: 8px
+    text-align: center
+
+button
+    cursor: pointer
+    display: inline-block
+    margin: 10px
+    padding: $button-padding
+    border: 0
+    background: $primaryColor
+    color: $text-color
+    font:
+        size: 18px
+        weight: 700
+    text-transform: capitalize
+
+.example-section
+
+    .duration-example
+        &.slow
+            @include sweep(right, $activeColor, $text-color, 0, before, $slowDuration)
+        &.medium
+            @include sweep(right, $activeColor, $text-color, 0, before, $mediumDuration)
+        &.fast
+            @include sweep(right, $activeColor, $text-color, 0, before, $fastDuration)
+
+    .timing-example
+        @include overline-from-left(1s)
+        width: 250px
+        &.ease
+            @include prefixed(transition-timing-function, ease)
+        &.ease-in
+            @include prefixed(transition-timing-function, ease-in)
+        &.ease-out
+            @include prefixed(transition-timing-function, ease-out)
+        &.linear
+            @include prefixed(transition-timing-function, linear)
+
+    .movement-example
+        &.small
+            @include bounce(1.1)
+        &.medium
+            @include bounce(1.2)
+        &.large
+            @include bounce(1.4)
+
+    .link-example
+        margin: 10px
+
+        &.underline
+            @include underline(left, $primaryColor, 2px)
+        &.float
+            @include float
+        &.pulse
+            @include pulse
+
+    .text-example
+        // @include wobble-fixed(bottom)
+        @include pulse-shrink
+        display: block
+        max-width: 350px
 
 .button-section
     margin:
         bottom: $site-padding
 
     .example-button
-        cursor: pointer
-        display: inline-block
-        margin: 10px
-        padding: $button-padding
-        border: 0
-        background: $orange
-        color: $text-color
-        font:
-            size: 18px
-            weight: 700
-        text-transform: capitalize
 
         // 2D Transitions
         &.bob
@@ -174,92 +236,6 @@ $tipColor: $orange
             @include underline(left, $activeColor, 5px)
         &.underline-from-right
             @include underline(right, $activeColor, 5px)
-
-        // TODO: Fix these they don't work good
-        // Icon Transitions
-        &.icon-back
-            @include icon-back
-
-        &.icon-bob
-            @include icon-bob
-
-        &.icon-bounce-out
-            @include icon-bounce-out
-
-        &.icon-bounce
-            @include icon-bounce
-
-        &.icon-buzz-out
-            @include icon-buzz-out
-
-        &.icon-buzz
-            @include icon-buzz
-
-        &.icon-down
-            @include icon-down
-
-        &.icon-drop
-            @include icon-drop
-
-        &.icon-fade
-            @include icon-fade
-
-        &.icon-float-away
-            @include icon-float-away
-
-        &.icon-float
-            @include icon-float
-
-        &.icon-forward
-            @include icon-forward
-
-        &.icon-grow-rotate
-            @include icon-grow-rotate
-
-        &.icon-grow
-            @include icon-grow
-
-        &.icon-hang
-            @include icon-hang
-
-        &.icon-pop
-            @include icon-pop
-
-        &.icon-pulse-grow
-            @include icon-pulse-grow
-
-        &.icon-pulse-shrink
-            @include icon-pulse-shrink
-
-        &.icon-pulse
-            @include icon-pulse
-
-        &.icon-push
-            @include icon-push
-
-        &.icon-rotate
-            @include icon-rotate
-
-        &.icon-shrink
-            @include icon-shrink
-
-        &.icon-sink-away
-            @include icon-sink-away
-
-        &.icon-sink
-            @include icon-sink
-
-        &.icon-spin
-            @include icon-spin
-
-        &.icon-up
-            @include icon-up
-
-        &.icon-wobble-horizontal
-            @include icon-wobble-horizontal
-
-        &.icon-wobble-vertical
-            @include icon-wobble-vertical
 
         // Shadow and Glow Transitions
         &.box-shadow-inset

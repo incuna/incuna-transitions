@@ -52,6 +52,42 @@
         <div class="main-content-wrap outer">
             <section class="main-content inner">
 
+                <div class="example-section">
+                    <h3>Examples</h3>
+
+                    <p class="intro">This page was created with the intention of providing the Incuna design team with a way to visualise the sort of transitions and animations we can add to our sites. All of these effects are capable of being customised and fine tuned to fit the specific needs of each design.</p>
+
+                    <p class="intro">We can customise animation properties like duration, timing function, and amount of movement. To learn more about the animation properties that we can affect with css have a look at <a href="https://robots.thoughtbot.com/css-animation-for-beginners#additional-animation-properties" target="_blank">this guide</a>. Below are a few simple examples.</p>
+
+                    <h5>Duration:</h5>
+                        <button class="duration-example slow">slow</button>
+                        <button class="duration-example medium">medium</button>
+                        <button class="duration-example fast">fast</button>
+
+                    <h5>Timing function:</h5>
+                        <button class="timing-example ease">ease</button>
+                        <button class="timing-example ease-in">ease-in</button>
+                        <button class="timing-example ease-out">ease-out</button>
+                        <button class="timing-example linear">linear</button>
+
+                    <h5>Movement:</h5>
+                        <button class="movement-example small">small</button>
+                        <button class="movement-example medium">medium</button>
+                        <button class="movement-example large">large</button>
+
+                    <p class="intro">We can also apply the transitions to a variety of elements (not just buttons).</p>
+
+                    <a href="/" class="link-example underline">This is a link with Underline</a>
+                    <a href="/" class="link-example float">This is a link with Float</a>
+                    <a href="/" class="link-example pulse">This is a link with Pulse</a>
+
+                    <p class="text-example">This is a paragraph of text with the pulse-shrink animation. <strong>Please do not actually put this transition on paragraphs of text</strong>. We are just doing it here for demonstration purposes, to show that we can. But I think we can agree that it is not a very user friendly or meaningful animation.</p>
+
+                    <p class="intro">You can, of course, also use whatever colors, fonts, sizes, padding, etc. that you want.</p>
+
+                    <p class="note">Note to devs: this library is still very much a work in progress so in order to achieve some of these results you may need to customise the mixin to be a bit more flexible first.</p>
+                </div>
+
                 <h3>Hover transitions</h3>
                 <p class="intro">These transitions can be applied to buttons, links, nav items and other interactive page elements. They all work on mouse over.</p>
 
@@ -134,180 +170,6 @@
                     <button class="example-button underline-from-right">underline-from-right</button>
                 </div>
 
-                <!-- ICON TRANSITIONS -->
-                <div class="button-section icon-transitions">
-                    <h4>Icon Transitions</h4>
-
-                    <button class="example-button icon-back">
-                        <span>icon-back</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-bob">
-                        <span>icon-bob</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-bounce-out">
-                        <span>icon-bounce-out</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-bounce">
-                        <span>icon-bounce</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-buzz-out">
-                        <span>icon-buzz-out</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-buzz">
-                        <span>icon-buzz</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-down">
-                        <span>icon-down</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-drop">
-                        <span>icon-drop</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-fade">
-                        <span>icon-fade</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-float-away">
-                        <span>icon-float-away</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-float">
-                        <span>icon-float</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-forward">
-                        <span>icon-forward</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-grow-rotate">
-                        <span>icon-grow-rotate</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-grow">
-                        <span>icon-grow</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-hang">
-                        <span>icon-hang</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-pop">
-                        <span>icon-pop</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-pulse-grow">
-                        <span>icon-pulse-grow</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-pulse-shrink">
-                        <span>icon-pulse-shrink</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-pulse">
-                        <span>icon-pulse</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-push">
-                        <span>icon-push</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-rotate">
-                        <span>icon-rotate</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-shrink">
-                        <span>icon-shrink</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-sink-away">
-                        <span>icon-sink-away</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-sink">
-                        <span>icon-sink</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-spin">
-                        <span>icon-spin</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-up">
-                        <span>icon-up</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-wobble-horizontal">
-                        <span>icon-wobble-horizontal</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                    <button class="example-button icon-wobble-vertical">
-                        <span>icon-wobble-vertical</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
-                </div>
-
                 <!-- SHADOW GLOW TRANSITIONS -->
                 <div class="button-section shadow-glow-transitions">
                     <h4>Shadow and Glow Transitions</h4>
@@ -335,6 +197,10 @@
                     <button class="example-button bubble-top">bubble-top</button>
 
                 </div>
+
+                <h3>Still to come</h3>
+
+                <p class="intro">We will be updating this page to show how some of these animations can be used on button icons rather than the buttons themselves (we just need to fix those mixins first). We will also be adding some demonstrations for some of our page transitions, for example for expanding and collapsing content.</p>
 
             </section>
         </div>
