@@ -2,10 +2,16 @@
   "name": "incuna-transitions",
   "version": "1.4.2",
   "author": "Incuna",
+  "main": "node/index.js",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/incuna/incuna-transitions"
   },
+  "keywords": [
+    "sass",
+    "css"
+  ],
   "bugs": {
     "url": "https://github.com/incuna/incuna-transitions/issues"
   },
@@ -19,6 +25,7 @@
     "grunt-svgstore": "1.0.0",
     "jit-grunt": "0.9.1",
     "node-bourbon": "4.2.3",
+    "node-sass": "3.4.1",
     "grunt-sass": "1.1.0"
   },
   "dependencies": {
