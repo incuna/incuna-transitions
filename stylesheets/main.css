@@ -3152,7 +3152,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-left: 50px;
+    padding-left: 45px;
     -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s; }
     .button-section .example-button.icon-back .inline-svg {
@@ -3185,7 +3185,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-bob .inline-svg {
       position: absolute;
       top: 50%;
@@ -3222,7 +3222,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-bounce-out .inline-svg {
       position: absolute;
       top: 50%;
@@ -3255,7 +3255,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-bounce .inline-svg {
       position: absolute;
       top: 50%;
@@ -3288,7 +3288,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-buzz-out .inline-svg {
       position: absolute;
       top: 50%;
@@ -3319,7 +3319,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-buzz .inline-svg {
       position: absolute;
       top: 50%;
@@ -3348,7 +3348,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-down .inline-svg {
       position: absolute;
       top: 50%;
@@ -3375,7 +3375,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-drop .inline-svg {
       position: absolute;
       top: 50%;
@@ -3412,7 +3412,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-fade .inline-svg {
       position: absolute;
       top: 50%;
@@ -3438,7 +3438,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-float-away .inline-svg {
       position: absolute;
       top: 50%;
@@ -3468,7 +3468,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-float .inline-svg {
       position: absolute;
       top: 50%;
@@ -3499,7 +3499,7 @@ button {
     -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-forward .inline-svg {
       position: absolute;
       top: 50%;
@@ -3530,7 +3530,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-grow-rotate .inline-svg {
       position: absolute;
       top: 50%;
@@ -3561,7 +3561,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-grow .inline-svg {
       position: absolute;
       top: 50%;
@@ -3592,7 +3592,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-hang .inline-svg {
       position: absolute;
       top: 50%;
@@ -3629,7 +3629,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-pop .inline-svg {
       position: absolute;
       top: 50%;
@@ -3664,7 +3664,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-pulse-grow .inline-svg {
       position: absolute;
       top: 50%;
@@ -3697,7 +3697,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-pulse-shrink .inline-svg {
       position: absolute;
       top: 50%;
@@ -3730,7 +3730,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-pulse .inline-svg {
       position: absolute;
       top: 50%;
@@ -3763,7 +3763,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-push .inline-svg {
       position: absolute;
       top: 50%;
@@ -3800,7 +3800,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-rotate .inline-svg {
       position: absolute;
       top: 50%;
@@ -3831,7 +3831,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-shrink .inline-svg {
       position: absolute;
       top: 50%;
@@ -3860,7 +3860,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-sink-away .inline-svg {
       position: absolute;
       top: 50%;
@@ -3893,7 +3893,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-sink .inline-svg {
       position: absolute;
       top: 50%;
@@ -3922,7 +3922,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-spin .inline-svg {
       position: absolute;
       top: 50%;
@@ -3949,7 +3949,7 @@ button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-up .inline-svg {
       position: absolute;
       top: 50%;
@@ -3978,7 +3978,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-wobble-horizontal .inline-svg {
       position: absolute;
       top: 50%;
@@ -4009,7 +4009,7 @@ button {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     position: relative;
-    padding-right: 50px; }
+    padding-right: 45px; }
     .button-section .example-button.icon-wobble-vertical .inline-svg {
       position: absolute;
       top: 50%;
