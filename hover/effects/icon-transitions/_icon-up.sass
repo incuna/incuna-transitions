@@ -9,15 +9,12 @@
         @include prefixed(transform, translateY(-6px))
 
 // Icon Up
-@mixin icon-up
+@mixin icon-up($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: 2.2em
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     #{$hover-states}

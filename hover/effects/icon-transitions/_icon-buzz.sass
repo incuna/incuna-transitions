@@ -5,16 +5,13 @@
     100%
         @include prefixed(transform, translateX(-3px) rotate(-2deg))
 
-@mixin icon-buzz
+@mixin icon-buzz($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
-    position: relative
-    padding-right: 2.2em
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     #{$hover-states}

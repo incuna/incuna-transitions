@@ -1,15 +1,12 @@
 // Icon Fade
-@mixin icon-fade
+@mixin icon-fade($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: #{$spaceBetweenTextAndArrows}
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, 0.5s)
         @include prefixed(transition-property, color)
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     #{$hover-states}

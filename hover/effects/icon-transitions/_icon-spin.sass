@@ -1,15 +1,12 @@
 // Icon Spin
-@mixin icon-spin
+@mixin icon-spin($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: 2.2em
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transition-duration, 1s)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-in-out)
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     #{$hover-states}

@@ -1,16 +1,11 @@
 // Icon Back
-@mixin icon-back
+@mixin icon-back($icon-size: 20px, $position: left, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-left: 2.2em
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
     @include prefixed(transition-duration, $fastDuration)
 
     .inline-svg
-        content: "\f137"
-        position: absolute
-        left: 1em
         padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $fastDuration)
         @include prefixed(transition-property, transform)
