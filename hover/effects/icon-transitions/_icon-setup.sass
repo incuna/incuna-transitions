@@ -7,9 +7,11 @@
     @if $position == right
         padding:
             right: $icon-size + $spacing-inner + $spacing-outer
-    @else
+    @else if $position == left
         padding:
             left: $icon-size + $spacing-inner + $spacing-outer
+    @else
+        @error "$position must be left or right"
     .inline-svg
         position: absolute
         top: 50%
