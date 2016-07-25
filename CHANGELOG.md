@@ -1,4 +1,4 @@
-# Upcoming
+# 1.5.0
 
 * Create demo page using github pages
 * Set up grunt and svgstore for github page

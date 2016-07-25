@@ -1,6 +1,6 @@
 {
   "name": "incuna-transitions",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "author": "Incuna",
   "main": "node/index.js",
   "license": "MIT",
