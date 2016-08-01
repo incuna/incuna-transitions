@@ -206,6 +206,9 @@
                         <svg class="inline-svg upload">
                             <use xlink:href="#svg-upload"></use>
                         </svg>
+                        <svg class="inline-svg upload">
+                            <use xlink:href="#svg-upload"></use>
+                        </svg>
                     </button>
                     <button class="example-button icon-float">
                         <span>icon-float</span>
@@ -281,8 +284,11 @@
                     </button>
                     <button class="example-button icon-sink-away">
                         <span>icon-sink-away</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
                         </svg>
                     </button>
                     <button class="example-button icon-sink">
