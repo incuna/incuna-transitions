@@ -35,11 +35,25 @@ Fallbacks for older browsers are the responsibility of the developer adding Hove
 
 Please be certain any effects you submit at least work in the latest versions of modern browsers, and advise us accordingly if that is not the case.
 
-# To Do List
 
-The following is a list of ideas we have in mind for developing incuna-transitions:
+# Working on the project
 
-1. Remove all trace of icon-fonts. If you would like to learn more about why icon-fonts are bad you can watch [this video](https://www.youtube.com/watch?v=9xXBYcWgCHA) by our excellent contributor @ninjanails.
-2. Add the option to introduce arguments to mixins to make them more customisable
-3. Create some really great page transitions and other effects that will pair nicely with Angular JS's functionality.
-4. And more...
+This project uses `grunt` to compile sass and templates. 
+
+To set up and run the project locally:
+* Run `npm install`
+* Run `bower install`
+* Run `grunt`
+* Open `index.html` in your browser
+
+**IMPORTANT:** Do not work directly on `incuna-transitions/index.html` this is a compiled file and your changes will be overwritten. Instead you should be working on `incuna-transitions/index.html.template`
+
+This project also supports inline svg icons using `SVGstore`, to add new icons save the svg files with `presentation attributes` and put them in `images/icons`. `Grunt` needs to be run to compile the new svg map before the icon can be used.
+
+## Github page
+
+There is a github page set up for this repo here: http://incuna.github.io/incuna-transitions/
+
+To update the github page make sure all the required changes have been merged into master, then merge master into the `gh-pages` branch.
+
+**Do not** work directly on the `gh-pages` branch.
