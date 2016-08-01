@@ -3401,32 +3401,6 @@ button {
       -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
       animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
       opacity: 0; }
-  .button-section .example-button.icon-fade {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    padding-right: 45px; }
-    .button-section .example-button.icon-fade .inline-svg {
-      position: absolute;
-      top: 50%;
-      right: 15px;
-      margin-top: -10px; }
-    .button-section .example-button.icon-fade .inline-svg {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      -webkit-transition-property: color;
-      transition-property: color;
-      padding: 0 1px; }
-    .button-section .example-button.icon-fade:hover .inline-svg, .button-section .example-button.icon-fade:active .inline-svg, .button-section .example-button.icon-fade:focus .inline-svg {
-      color: #0F9E5E; }
   .button-section .example-button.icon-float-away {
     display: inline-block;
     vertical-align: middle;

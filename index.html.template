@@ -201,12 +201,6 @@
                             <use xlink:href="#svg-download"></use>
                         </svg>
                     </button>
-                    <button class="example-button icon-fade">
-                        <span>icon-fade</span>
-                        <svg class="inline-svg arrow-left">
-                            <use xlink:href="#svg-arrow-left"></use>
-                        </svg>
-                    </button>
                     <button class="example-button icon-float-away">
                         <span>icon-float-away</span>
                         <svg class="inline-svg upload">
