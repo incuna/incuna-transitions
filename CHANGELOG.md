@@ -1,3 +1,8 @@
+# 1.6.0
+
+* Fix last few icon mixins - sink-away and float-away
+* Remove icon-fade mixin - there's no need for this be it's own mixin
+
 # 1.5.0
 
 * Create demo page using github pages
