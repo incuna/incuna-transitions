@@ -1,3 +1,5 @@
+// This mixin requires that 2 identical icons to be present in the html
+
 // Icon Float Away
 @include keyframes(#{$nameSpace}-icon-float-away)
     0%
@@ -12,12 +14,15 @@
     @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
-        @include prefixed(animation-duration, #{$slowDuration})
-        @include prefixed(animation-fill-mode, forwards)
         padding: 0 1px
-        opacity: 0
+
+        &:nth-of-type(2)
+            @include prefixed(animation-duration, #{$slowDuration})
+            @include prefixed(animation-fill-mode, forwards)
+            opacity: 0
 
     #{$hover-states}
         .inline-svg
-            @include prefixed(animation-name, #{$nameSpace}-icon-float-away)
-            @include prefixed(animation-timing-function, ease-out)
+            &:nth-of-type(2)
+                @include prefixed(animation-name, #{$nameSpace}-icon-float-away)
+                @include prefixed(animation-timing-function, ease-out)

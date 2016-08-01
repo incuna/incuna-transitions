@@ -3444,13 +3444,14 @@ button {
       right: 15px;
       margin-top: -10px; }
     .button-section .example-button.icon-float-away .inline-svg {
-      -webkit-animation-duration: 0.5s;
-      animation-duration: 0.5s;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode: forwards;
-      padding: 0 1px;
-      opacity: 0; }
-    .button-section .example-button.icon-float-away:hover .inline-svg, .button-section .example-button.icon-float-away:active .inline-svg, .button-section .example-button.icon-float-away:focus .inline-svg {
+      padding: 0 1px; }
+      .button-section .example-button.icon-float-away .inline-svg:nth-of-type(2) {
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        opacity: 0; }
+    .button-section .example-button.icon-float-away:hover .inline-svg:nth-of-type(2), .button-section .example-button.icon-float-away:active .inline-svg:nth-of-type(2), .button-section .example-button.icon-float-away:focus .inline-svg:nth-of-type(2) {
       -webkit-animation-name: hover-icon-float-away;
       animation-name: hover-icon-float-away;
       -webkit-animation-timing-function: ease-out;
@@ -3865,17 +3866,17 @@ button {
       top: 50%;
       right: 15px;
       margin-top: -10px; }
-    .button-section .example-button.icon-sink-away .inline-svg {
+    .button-section .example-button.icon-sink-away .inline-svg:first-of-type {
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       padding: 0 1px; }
-    .button-section .example-button.icon-sink-away .inline-svg {
+    .button-section .example-button.icon-sink-away .inline-svg:nth-of-type(2) {
       -webkit-animation-duration: 0.5s;
       animation-duration: 0.5s;
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards;
       opacity: 0; }
-    .button-section .example-button.icon-sink-away:hover .inline-svg, .button-section .example-button.icon-sink-away:active .inline-svg, .button-section .example-button.icon-sink-away:focus .inline-svg {
+    .button-section .example-button.icon-sink-away:hover .inline-svg:nth-of-type(2), .button-section .example-button.icon-sink-away:active .inline-svg:nth-of-type(2), .button-section .example-button.icon-sink-away:focus .inline-svg:nth-of-type(2) {
       -webkit-animation-name: hover-icon-sink-away;
       animation-name: hover-icon-sink-away;
       -webkit-animation-timing-function: ease-out;
