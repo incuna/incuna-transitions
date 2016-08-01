@@ -40,7 +40,7 @@ Please be certain any effects you submit at least work in the latest versions of
 
 This project uses `grunt` to compile sass and templates. 
 
-To set up the project locally:
+To set up and run the project locally:
 * Run `npm install`
 * Run `bower install`
 * Run `grunt`
