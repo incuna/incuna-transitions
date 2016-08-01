@@ -7,15 +7,12 @@
         opacity: 0
 
 // Icon Sink Away
-@mixin icon-sink-away
+@mixin icon-sink-away($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: #{$spaceBetweenTextAndArrows}
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     .inline-svg

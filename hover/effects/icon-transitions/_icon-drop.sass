@@ -10,15 +10,12 @@
         opacity: 1
 
 // Icon Drop
-@mixin icon-drop
+@mixin icon-drop($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: #{$spaceBetweenTextAndArrows}
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
-        position: absolute
-        right: 1em
         opacity: 1
         padding: 0 1px
 

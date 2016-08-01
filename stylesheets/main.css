@@ -921,8 +921,7 @@
   height: 20px;
   display: inline-block;
   vertical-align: middle;
-  fill: #000;
-  margin-left: 10px; }
+  fill: #000; }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -3142,6 +3141,892 @@ button {
     .button-section .example-button.underline-from-right:hover::before, .button-section .example-button.underline-from-right:active::before, .button-section .example-button.underline-from-right:focus::before {
       left: 0;
       right: 0; }
+  .button-section .example-button.icon-back {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-left: 45px;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s; }
+    .button-section .example-button.icon-back .inline-svg {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-back .inline-svg {
+      padding: 0 1px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    .button-section .example-button.icon-back:hover .inline-svg, .button-section .example-button.icon-back:active .inline-svg, .button-section .example-button.icon-back:focus .inline-svg {
+      -webkit-transform: translateX(-4px);
+      transform: translateX(-4px); }
+  .button-section .example-button.icon-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-bob .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-bob .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-bob:hover .inline-svg, .button-section .example-button.icon-bob:active .inline-svg, .button-section .example-button.icon-bob:focus .inline-svg {
+      -webkit-animation-name: hover-icon-bob-float, hover-icon-bob;
+      animation-name: hover-icon-bob-float, hover-icon-bob;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate; }
+  .button-section .example-button.icon-bounce-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-bounce-out .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-bounce-out .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-bounce-out:hover .inline-svg, .button-section .example-button.icon-bounce-out:active .inline-svg, .button-section .example-button.icon-bounce-out:focus .inline-svg {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+  .button-section .example-button.icon-bounce {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-bounce .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-bounce .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-bounce:hover .inline-svg, .button-section .example-button.icon-bounce:active .inline-svg, .button-section .example-button.icon-bounce:focus .inline-svg {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+  .button-section .example-button.icon-buzz-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-buzz-out .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-buzz-out .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-buzz-out:hover .inline-svg, .button-section .example-button.icon-buzz-out:active .inline-svg, .button-section .example-button.icon-buzz-out:focus .inline-svg {
+      -webkit-animation-name: hover-icon-buzz-out;
+      animation-name: hover-icon-buzz-out;
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
+  .button-section .example-button.icon-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-buzz .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-buzz .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-buzz:hover .inline-svg, .button-section .example-button.icon-buzz:active .inline-svg, .button-section .example-button.icon-buzz:focus .inline-svg {
+      -webkit-animation-name: hover-icon-buzz;
+      animation-name: hover-icon-buzz;
+      -webkit-animation-duration: 0.15s;
+      animation-duration: 0.15s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+  .button-section .example-button.icon-down {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-down .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-down .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-down:hover .inline-svg, .button-section .example-button.icon-down:active .inline-svg, .button-section .example-button.icon-down:focus .inline-svg {
+      -webkit-animation-name: hover-icon-down;
+      animation-name: hover-icon-down;
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+  .button-section .example-button.icon-drop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-drop .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-drop .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+      padding: 0 1px; }
+    .button-section .example-button.icon-drop:hover .inline-svg, .button-section .example-button.icon-drop:active .inline-svg, .button-section .example-button.icon-drop:focus .inline-svg {
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-animation-name: hover-icon-drop;
+      animation-name: hover-icon-drop;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      opacity: 0; }
+  .button-section .example-button.icon-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-fade .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-fade .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-property: color;
+      transition-property: color;
+      padding: 0 1px; }
+    .button-section .example-button.icon-fade:hover .inline-svg, .button-section .example-button.icon-fade:active .inline-svg, .button-section .example-button.icon-fade:focus .inline-svg {
+      color: #0F9E5E; }
+  .button-section .example-button.icon-float-away {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-float-away .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-float-away .inline-svg {
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      padding: 0 1px;
+      opacity: 0; }
+    .button-section .example-button.icon-float-away:hover .inline-svg, .button-section .example-button.icon-float-away:active .inline-svg, .button-section .example-button.icon-float-away:focus .inline-svg {
+      -webkit-animation-name: hover-icon-float-away;
+      animation-name: hover-icon-float-away;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+  .button-section .example-button.icon-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-float .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-float .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-float:hover .inline-svg, .button-section .example-button.icon-float:active .inline-svg, .button-section .example-button.icon-float:focus .inline-svg {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px); }
+  .button-section .example-button.icon-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-forward .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-forward .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-forward:hover .inline-svg, .button-section .example-button.icon-forward:active .inline-svg, .button-section .example-button.icon-forward:focus .inline-svg {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px); }
+  .button-section .example-button.icon-grow-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-grow-rotate .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-grow-rotate .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-grow-rotate:hover .inline-svg, .button-section .example-button.icon-grow-rotate:active .inline-svg, .button-section .example-button.icon-grow-rotate:focus .inline-svg {
+      -webkit-transform: scale(1.5) rotate(12deg);
+      transform: scale(1.5) rotate(12deg); }
+  .button-section .example-button.icon-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-grow .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-grow .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-grow:hover .inline-svg, .button-section .example-button.icon-grow:active .inline-svg, .button-section .example-button.icon-grow:focus .inline-svg {
+      -webkit-transform: scale(1.3) translateZ(0);
+      transform: scale(1.3) translateZ(0); }
+  .button-section .example-button.icon-hang {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-hang .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-hang .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-hang:hover .inline-svg, .button-section .example-button.icon-hang:active .inline-svg, .button-section .example-button.icon-hang:focus .inline-svg {
+      -webkit-animation-name: hover-icon-hang-sink, hover-icon-hang;
+      animation-name: hover-icon-hang-sink, hover-icon-hang;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate; }
+  .button-section .example-button.icon-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-pop .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-pop .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-pop:hover .inline-svg, .button-section .example-button.icon-pop:active .inline-svg, .button-section .example-button.icon-pop:focus .inline-svg {
+      -webkit-animation-name: hover-icon-pop;
+      animation-name: hover-icon-pop;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
+  .button-section .example-button.icon-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-pulse-grow .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-pulse-grow .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-pulse-grow:hover .inline-svg, .button-section .example-button.icon-pulse-grow:active .inline-svg, .button-section .example-button.icon-pulse-grow:focus .inline-svg {
+      -webkit-animation-name: hover-icon-pulse-grow;
+      animation-name: hover-icon-pulse-grow;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+  .button-section .example-button.icon-pulse-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-pulse-shrink .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-pulse-shrink .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-pulse-shrink:hover .inline-svg, .button-section .example-button.icon-pulse-shrink:active .inline-svg, .button-section .example-button.icon-pulse-shrink:focus .inline-svg {
+      -webkit-animation-name: hover-icon-pulse-shrink;
+      animation-name: hover-icon-pulse-shrink;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate; }
+  .button-section .example-button.icon-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-pulse .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-pulse .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-pulse:hover .inline-svg, .button-section .example-button.icon-pulse:active .inline-svg, .button-section .example-button.icon-pulse:focus .inline-svg {
+      -webkit-animation-name: hover-icon-pulse;
+      animation-name: hover-icon-pulse;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+  .button-section .example-button.icon-push {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-push .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-push .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-push:hover .inline-svg, .button-section .example-button.icon-push:active .inline-svg, .button-section .example-button.icon-push:focus .inline-svg {
+      -webkit-animation-name: hover-icon-push;
+      animation-name: hover-icon-push;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
+  .button-section .example-button.icon-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-rotate .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-rotate .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-rotate:hover .inline-svg, .button-section .example-button.icon-rotate:active .inline-svg, .button-section .example-button.icon-rotate:focus .inline-svg {
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg); }
+  .button-section .example-button.icon-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-shrink .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-shrink .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-shrink:hover .inline-svg, .button-section .example-button.icon-shrink:active .inline-svg, .button-section .example-button.icon-shrink:focus .inline-svg {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); }
+  .button-section .example-button.icon-sink-away {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-sink-away .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-sink-away .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-sink-away .inline-svg {
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      opacity: 0; }
+    .button-section .example-button.icon-sink-away:hover .inline-svg, .button-section .example-button.icon-sink-away:active .inline-svg, .button-section .example-button.icon-sink-away:focus .inline-svg {
+      -webkit-animation-name: hover-icon-sink-away;
+      animation-name: hover-icon-sink-away;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+  .button-section .example-button.icon-sink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-sink .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-sink .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-sink:hover .inline-svg, .button-section .example-button.icon-sink:active .inline-svg, .button-section .example-button.icon-sink:focus .inline-svg {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px); }
+  .button-section .example-button.icon-spin {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-spin .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-spin .inline-svg {
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+      padding: 0 1px; }
+    .button-section .example-button.icon-spin:hover .inline-svg, .button-section .example-button.icon-spin:active .inline-svg, .button-section .example-button.icon-spin:focus .inline-svg {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); }
+  .button-section .example-button.icon-up {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-up .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-up .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-up:hover .inline-svg, .button-section .example-button.icon-up:active .inline-svg, .button-section .example-button.icon-up:focus .inline-svg {
+      -webkit-animation-name: hover-icon-up;
+      animation-name: hover-icon-up;
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out; }
+  .button-section .example-button.icon-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-wobble-horizontal .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-wobble-horizontal .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-wobble-horizontal:hover .inline-svg, .button-section .example-button.icon-wobble-horizontal:active .inline-svg, .button-section .example-button.icon-wobble-horizontal:focus .inline-svg {
+      -webkit-animation-name: hover-icon-wobble-horizontal;
+      animation-name: hover-icon-wobble-horizontal;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
+  .button-section .example-button.icon-wobble-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    position: relative;
+    padding-right: 45px; }
+    .button-section .example-button.icon-wobble-vertical .inline-svg {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      margin-top: -10px; }
+    .button-section .example-button.icon-wobble-vertical .inline-svg {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      padding: 0 1px; }
+    .button-section .example-button.icon-wobble-vertical:hover .inline-svg, .button-section .example-button.icon-wobble-vertical:active .inline-svg, .button-section .example-button.icon-wobble-vertical:focus .inline-svg {
+      -webkit-animation-name: hover-icon-wobble-vertical;
+      animation-name: hover-icon-wobble-vertical;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
   .button-section .example-button.box-shadow-inset {
     display: inline-block;
     vertical-align: middle;

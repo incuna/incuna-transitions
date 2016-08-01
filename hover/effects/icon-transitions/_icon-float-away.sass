@@ -7,18 +7,14 @@
         opacity: 0
 
 // Icon Float Away
-@mixin icon-float-away
+@mixin icon-float-away($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
-    position: relative
-    padding-right: #{$spaceBetweenTextAndArrows}
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
-        position: absolute
-        right: 1em
-        padding: 0 1px
-
         @include prefixed(animation-duration, #{$slowDuration})
         @include prefixed(animation-fill-mode, forwards)
+        padding: 0 1px
         opacity: 0
 
     #{$hover-states}

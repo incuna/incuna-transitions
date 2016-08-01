@@ -149,6 +149,180 @@
                     <button class="example-button underline-from-right">underline-from-right</button>
                 </div>
 
+                <!-- ICON TRANSITIONS -->
+                <div class="button-section icon-transitions">
+                    <h4>Icon Transitions</h4>
+
+                    <button class="example-button icon-back">
+                        <span>icon-back</span>
+                        <svg class="inline-svg arrow-left">
+                            <use xlink:href="#svg-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-bob">
+                        <span>icon-bob</span>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-bounce-out">
+                        <span>icon-bounce-out</span>
+                        <svg class="inline-svg circle-right">
+                            <use xlink:href="#svg-circle-right"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-bounce">
+                        <span>icon-bounce</span>
+                        <svg class="inline-svg headphones">
+                            <use xlink:href="#svg-headphones"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-buzz-out">
+                        <span>icon-buzz-out</span>
+                        <svg class="inline-svg alarm">
+                            <use xlink:href="#svg-alarm"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-buzz">
+                        <span>icon-buzz</span>
+                        <svg class="inline-svg alarm">
+                            <use xlink:href="#svg-alarm"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-down">
+                        <span>icon-down</span>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-drop">
+                        <span>icon-drop</span>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-fade">
+                        <span>icon-fade</span>
+                        <svg class="inline-svg arrow-left">
+                            <use xlink:href="#svg-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-float-away">
+                        <span>icon-float-away</span>
+                        <svg class="inline-svg upload">
+                            <use xlink:href="#svg-upload"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-float">
+                        <span>icon-float</span>
+                        <svg class="inline-svg upload">
+                            <use xlink:href="#svg-upload"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-forward">
+                        <span>icon-forward</span>
+                        <svg class="inline-svg arrow-right">
+                            <use xlink:href="#svg-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-grow-rotate">
+                        <span>icon-grow-rotate</span>
+                        <svg class="inline-svg circle-left">
+                            <use xlink:href="#svg-circle-left"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-grow">
+                        <span>icon-grow</span>
+                        <svg class="inline-svg circle-right">
+                            <use xlink:href="#svg-circle-right"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-hang">
+                        <span>icon-hang</span>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-pop">
+                        <span>icon-pop</span>
+                        <svg class="inline-svg printer">
+                            <use xlink:href="#svg-printer"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-pulse-grow">
+                        <span>icon-pulse-grow</span>
+                        <svg class="inline-svg home">
+                            <use xlink:href="#svg-home"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-pulse-shrink">
+                        <span>icon-pulse-shrink</span>
+                        <svg class="inline-svg home">
+                            <use xlink:href="#svg-home"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-pulse">
+                        <span>icon-pulse</span>
+                        <svg class="inline-svg home">
+                            <use xlink:href="#svg-home"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-push">
+                        <span>icon-push</span>
+                        <svg class="inline-svg circle-right">
+                            <use xlink:href="#svg-circle-right"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-rotate">
+                        <span>icon-rotate</span>
+                        <svg class="inline-svg loop">
+                            <use xlink:href="#svg-loop"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-shrink">
+                        <span>icon-shrink</span>
+                        <svg class="inline-svg pencil">
+                            <use xlink:href="#svg-pencil"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-sink-away">
+                        <span>icon-sink-away</span>
+                        <svg class="inline-svg arrow-left">
+                            <use xlink:href="#svg-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-sink">
+                        <span>icon-sink</span>
+                        <svg class="inline-svg download">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-spin">
+                        <span>icon-spin</span>
+                        <svg class="inline-svg loop">
+                            <use xlink:href="#svg-loop"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-up">
+                        <span>icon-up</span>
+                        <svg class="inline-svg circle-up">
+                            <use xlink:href="#svg-circle-up"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-wobble-horizontal">
+                        <span>icon-wobble-horizontal</span>
+                        <svg class="inline-svg circle-right">
+                            <use xlink:href="#svg-circle-right"></use>
+                        </svg>
+                    </button>
+                    <button class="example-button icon-wobble-vertical">
+                        <span>icon-wobble-vertical</span>
+                        <svg class="inline-svg circle-down">
+                            <use xlink:href="#svg-circle-down"></use>
+                        </svg>
+                    </button>
+                </div>
+
                 <!-- SHADOW GLOW TRANSITIONS -->
                 <div class="button-section shadow-glow-transitions">
                     <h4>Shadow and Glow Transitions</h4>

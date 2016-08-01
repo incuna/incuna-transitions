@@ -1,0 +1,20 @@
+// Mixin to position icons
+// This mixin is used in every icon-transition mixin and must be included
+// if you are using any other icon-transition files
+
+@mixin icon-setup($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
+    position: relative
+    @if $position == right
+        padding:
+            right: $icon-size + $spacing-inner + $spacing-outer
+    @else if $position == left
+        padding:
+            left: $icon-size + $spacing-inner + $spacing-outer
+    @else
+        @error "$position must be left or right"
+    .inline-svg
+        position: absolute
+        top: 50%
+        #{$position}: $spacing-outer
+        margin:
+            top: - ($icon-size / 2)

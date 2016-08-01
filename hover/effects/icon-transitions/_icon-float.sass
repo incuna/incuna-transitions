@@ -1,17 +1,14 @@
 // Icon Float
-@mixin icon-float
+@mixin icon-float($icon-size: 20px, $position: right, $spacing-inner: 10px, $spacing-outer: 15px)
     @include hacks()
     @include prefixed(transition-duration, $mediumDuration)
-    position: relative
-    padding-right: 2.2em
+    @include icon-setup($icon-size, $position, $spacing-inner, $spacing-outer)
 
     .inline-svg
         @include prefixed(transform, translateZ(0))
         @include prefixed(transition-duration, $mediumDuration)
         @include prefixed(transition-property, transform)
         @include prefixed(transition-timing-function, ease-out)
-        position: absolute
-        right: 1em
         padding: 0 1px
 
     #{$hover-states}
