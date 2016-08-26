@@ -14,17 +14,15 @@
     position: relative
     padding-right: #{$spaceBetweenTextAndArrows}
 
-    &::before
-        content: "\f01a"
+    .inline-svg
         position: absolute
         right: 1em
         padding: 0 1px
-        font-family: FontAwesome
         @include prefixed(transform, translateZ(0))
 
     #{$hover-states}
 
-        &::before
+        .inline-svg
             @include prefixed(animation-name, #{$nameSpace}-icon-down)
             @include prefixed(animation-duration, 0.75s)
             @include prefixed(animation-timing-function, ease-out)
