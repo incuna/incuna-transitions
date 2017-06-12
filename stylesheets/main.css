@@ -943,7 +943,7 @@ table {
 body {
   box-sizing: border-box;
   color: #373737;
-  background: #212121;
+  background: #faaf40;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   line-height: 1.5; }
@@ -1094,7 +1094,7 @@ form {
 .inner {
   position: relative;
   max-width: 1200px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   margin: 0 auto; }
 
 .forkme-banner {
@@ -1112,28 +1112,36 @@ form {
   border-bottom-right-radius: 2px; }
 
 .header-wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121); }
+  background-color: #f3f3f3; }
   .header-wrap .inner {
-    padding: 50px 10px 30px 10px; }
+    padding: 150px 20px; }
+
+.header-main-content {
+  position: relative; }
+
+.header-main-text {
+  width: 70%;
+  display: inline-block; }
 
 .project-title {
   margin: 0;
   color: #faaf40;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px; }
+  font-size: 55px;
+  font-weight: 700; }
 
 .project-tagline {
-  color: #fff;
-  font-size: 24px;
+  color: #bfbfbf;
+  font-size: 20px;
   font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px; }
+  background: none; }
+
+.animation-icon-wrap {
+  vertical-align: top;
+  float: right; }
+  .animation-icon-wrap .animation-icon {
+    fill: #faaf40;
+    width: 200px;
+    height: 200px; }
 
 .downloads {
   position: absolute;
@@ -1169,16 +1177,35 @@ form {
 .tar-download-link:hover {
   background: url(../images/sprite_download.png) no-repeat top right; }
 
-.main-content-wrap {
-  background: #eee;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111; }
-
 .main-content {
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-top: -50px;
+  background-color: #fff;
+  border: solid 1px #e0e0e0; }
 
 .footer-wrap {
   background: #212121; }
+
+@media screen and (min-width: 1300px) {
+  .main-content {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
+@media screen and (max-width: 728px) {
+  .header-main-text {
+    width: 100%; }
+  .animation-icon-wrap {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .animation-icon-wrap .animation-icon {
+      width: 80px;
+      height: 80px; } }
+
+@media screen and (max-width: 586px) {
+  .animation-icon-wrap .animation-icon {
+    width: 50px;
+    height: 50px; } }
 
 @media screen and (max-width: 480px) {
   body {
