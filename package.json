@@ -15,11 +15,12 @@
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-less": "^1.0.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-version": "^0.3.0",
+    "grunt-sass": "1.1.0",
     "grunt-svgstore": "1.0.0",
+    "grunt-template": "0.2.3",
+    "grunt-version": "^0.3.0",
     "jit-grunt": "0.9.1",
-    "node-bourbon": "4.2.3",
-    "grunt-sass": "1.1.0"
+    "node-bourbon": "4.2.3"
   },
   "dependencies": {
     "load-grunt-tasks": "~0.2.0"

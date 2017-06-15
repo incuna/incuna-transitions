@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                     'index.html.template'
                 ],
                 tasks: [
-                    'process:demo'
+                    'template:demo'
                 ]
             }
         },
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
                 src: ['images/icons/**/*.svg']
             }
         },
-        process: {
+        template: {
             demo: {
                 options: {
                     data: {
@@ -101,21 +101,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build-demo', [
         'build',
-        'process:demo'
+        'template:demo'
     ]);
-
-    grunt.registerMultiTask('process', 'Process a file wtih data', function () {
-        var options = this.options();
-        this.files.forEach(function (file) {
-            var templateData = {
-                data: options.data
-            };
-            var contents = '';
-            file.src.forEach(function (filepath) {
-                contents += grunt.template.process(grunt.file.read(filepath), templateData);
-            });
-            grunt.file.write(file.dest, contents);
-        });
-    });
 
 }
